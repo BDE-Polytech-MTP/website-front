@@ -1,5 +1,12 @@
 # nuxt_boilerplate
 
+> Easy template for starting new project.
+
+Embedded:
+- Axios
+- Buefy
+- @nuxt/Auth
+
 ## Build Setup
 
 ```bash
