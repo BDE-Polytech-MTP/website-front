@@ -3,7 +3,7 @@
     class="section is-medium remove-padding-x"
     style="padding-left: 0; padding-right: 0"
   >
-    <section :class="'hero is-bold ' + theme">
+    <section :class="'hero is-medium is-bold ' + theme">
       <div class="hero-body level">
         <div
           class="level-item has-text-centered"

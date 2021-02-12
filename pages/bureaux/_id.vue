@@ -1,6 +1,5 @@
 <template>
   <main>
-    <Parallax :topPercentage="30" src="parallax.jpg" />
     <Article
       :title="bureau.nom"
       subtitle="Bureaux"

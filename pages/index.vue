@@ -1,28 +1,21 @@
 <template>
   <section>
-    <div id="header">
-      <h1 id="header-title" class="title has-text-white">Fraternitech</h1>
-    </div>
+    <Parallax
+      src="header.jpg"
+      title="Fraternitech"
+      :topPercentage="10"
+      :active="false"
+    />
     <p class="has-text-centered has-text-primary mt-3">
       <b-icon icon="chevron-down" size="is-large" />
     </p>
     <Article
-      title="Badminton"
-      subtitle="Associations sportives"
+      title="Polytech Montpellier"
+      subtitle="Associations d'élèves"
       :contents="contents"
-      stsartWithImage
-      picture="bde-org.png"
-    >
-      <ul>
-        <li class="subtitle is-size-6 my-2">🕒 : <strong>18h-22h</strong></li>
-        <li class="subtitle is-size-6 my-2">
-          📌 : <strong>4 rue emile Madelong</strong>
-        </li>
-        <li class="subtitle is-size-6 my-2">
-          📣 : <strong>Axel Duval</strong>
-        </li>
-      </ul>
-    </Article>
+      startWithImage
+      picture="mock.jpg"
+    />
 
     <Numbers :content="numbers" />
   </section>
@@ -37,9 +30,9 @@ export default {
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex temporibus voluptatem sunt fuga et. Et saepe eius facilis nam officia? Impedit        consequuntur commodi beatae ipsum eveniet neque voluptatum nisi        suscipit!",
       ],
       numbers: [
-        { title: "Prix compétitif", number: "50€" },
-        { title: "étudiants", number: 561 },
-        { title: "professeurs", number: 192 },
+        { titre: "Prix compétitif", valeur: "50€" },
+        { titre: "étudiants", valeur: 561 },
+        { titre: "professeurs", valeur: 192 },
       ],
     };
   },
