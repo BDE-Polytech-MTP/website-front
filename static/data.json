@@ -1,0 +1,195 @@
+{
+  "bureaux": {
+    "elements": [
+      {
+        "id": "bde",
+        "nom": "Bureau des étudiants",
+        "header": "petit description",
+        "emoji": "🎒",
+        "president": "Joe Biden",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum. Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique.",
+        "photo": "mock.jpg",
+        "organigramme": "organigram.jpg",
+        "theme": "is-danger",
+        "nombres": [
+          { "titre": "de budget annuel", "valeur": "150 000€" },
+          { "titre": "de préparation", "valeur": "1an" },
+          { "titre": "Spécialités", "valeur": 5 },
+          { "titre": "De femmes", "valeur": "60%" }
+        ]
+      },
+      {
+        "id": "bds",
+        "nom": "Bureau des sports",
+        "header": "petit description",
+        "emoji": "🏐",
+        "president": "Donald Trump",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum. Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique.",
+        "photo": "mock.jpg",
+        "organigramme": "organigram.jpg",
+        "nombres": [
+          { "titre": "Postes", "valeur": 69 },
+          { "titre": "de préparation", "valeur": "1an" },
+          { "titre": "Spécialités", "valeur": 5 },
+          { "titre": "De femmes", "valeur": "60%" }
+        ]
+      },
+      {
+        "id": "bda",
+        "nom": "Bureau des arts",
+        "header": "petit description",
+        "emoji": "🎨",
+        "president": "Julien Lepers",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum. Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique.",
+        "photo": "mock.jpg",
+        "organigramme": "organigram.jpg"
+      }
+    ],
+    "footer": {
+      "emoji": "🏅",
+      "titre": "Adhésions!",
+      "bouton": "Plus d'infos"
+    }
+  },
+  "associations": {
+    "elements": [
+      {
+        "type": "Sportives",
+        "emoji": "🏐",
+        "elements": [
+          {
+            "nom": "Badminton",
+            "responsable": "John Doe",
+            "emoji": "🏸",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum. Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique.",
+            "horaires": "Mercredi 20h-22h",
+            "lieu": "Gymnase Arthur Rimbaud",
+            "gmap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27474.824756894726!2d3.8654824839706414!3d43.62870750640594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8d3c6b4e35614b04!2sLa%20mie%20Caline!5e0!3m2!1sfr!2sfr!4v1613066632405!5m2!1sfr!2sfr",
+            "photo": "mock.jpg",
+            "membres": ["Silvain Durif", "Lola Tamalou"]
+          },
+          {
+            "nom": "Escalade",
+            "responsable": "Gilbert Montagné",
+            "emoji": "🧗‍♀️",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum. Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique.",
+            "horaires": "Mercredi 20h-22h",
+            "lieu": "Mur de la Mosson",
+            "gmap": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d360.9634225216508!2d3.8437114840086686!3d43.63344900493854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1612545523839!5m2!1sfr!2sfr",
+            "photo": "mock.jpg",
+            "membres": ["Silvain Durif", "Lola Tamalou"]
+          },
+          {
+            "nom": "Basket",
+            "responsable": "Jean Castex",
+            "emoji": "🏀",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum. Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique.",
+            "horaires": "Jeudi 14h-17h",
+            "lieu": "City stade de la Mosson",
+            "gmap": null,
+            "photo": "mock.jpg",
+            "membres": ["Silvain Durif", "Lola Tamalou"]
+          }
+        ]
+      },
+      {
+        "type": "Artistiques",
+        "emoji": "🎨",
+        "elements": [
+          {
+            "nom": "Musique",
+            "responsable": "Stephane Plazza",
+            "emoji": "🎼",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum. Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique.",
+            "horaires": "Tous les soirs à 19h",
+            "lieu": "Cafet Polytech",
+            "gmap": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d360.9634225216508!2d3.8437114840086686!3d43.63344900493854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1612545523839!5m2!1sfr!2sfr",
+            "photo": "mock.jpg",
+            "membres": ["Silvain Durif", "Lola Tamalou"]
+          }
+        ]
+      },
+      {
+        "type": "Autres",
+        "emoji": "🍃",
+        "elements": [
+          {
+            "nom": "Polyearth",
+            "responsable": "Alain Delon",
+            "emoji": "♻️",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum. Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique.",
+            "horaires": null,
+            "lieu": null,
+            "gmap": null,
+            "photo": "mock.jpg",
+            "membres": ["Silvain Durif", "Lola Tamalou"]
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "emoji": "🌱",
+      "titre": "Crée ton association!",
+      "bouton": {
+        "nom": "C'est parti",
+        "route": "/associations/creation"
+      }
+    }
+  },
+  "evenements": {
+    "elements": [
+      {
+        "type": "Interne",
+        "emoji": "🏠",
+        "elements": [
+          {
+            "id": "blue",
+            "nom": "Blue",
+            "emoji": "🌊",
+            "lieu": "Montpellier"
+          },
+          {
+            "id": "mms",
+            "nom": "m&m's",
+            "emoji": "🍭",
+            "lieu": "Marseille-Montpellier"
+          }
+        ]
+      },
+      {
+        "type": "Réseau",
+        "emoji": "🌐",
+        "elements": [
+          {
+            "id": "pink",
+            "nom": "Pink",
+            "emoji": "🎀",
+            "lieu": "Chambéry"
+          },
+          {
+            "id": "tigresses",
+            "nom": "Les tigresses",
+            "emoji": "🐯",
+            "lieu": "Clermont-Ferrand"
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "emoji": "🎟️",
+      "titre": "Réservaaations!",
+      "bouton": {
+        "nom": "Vite vite!",
+        "route": "/reservations"
+      }
+    }
+  },
+  "adhesions": {
+    "emoji": "🏅",
+    "sousTitre": "subtitle",
+    "photo": "mock.jpg",
+    "titreHero": "Tu fais le bon choix",
+    "descriptionHero": "Ton porte monnaie te remerciera",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum. Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique."
+  }
+}

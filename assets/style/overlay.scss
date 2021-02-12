@@ -1,0 +1,8 @@
+$primary: #00aeef;
+$primary-light: findLightColor($primary);
+
+// Import bulma styles
+@import "~bulma";
+
+// Import buefy styles
+@import "~buefy/src/scss/buefy";

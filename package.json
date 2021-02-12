@@ -15,5 +15,8 @@
     "nuxt": "^2.14.6",
     "nuxt-buefy": "^0.4.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.1"
+  }
 }

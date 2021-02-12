@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+.title {
+  font-family: "Poppins", sans-serif;
+}
+.text {
+  font-family: "Open Sans", sans-serif;
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#dots {
+  position: absolute;
+  top: -2%;
+  left: -2%;
+  width: 25%;
+  z-index: -1;
+}
+#lines {
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  width: 35%;
+  z-index: -1;
+}
+.grayscale:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
