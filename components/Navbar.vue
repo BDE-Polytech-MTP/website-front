@@ -130,9 +130,9 @@
                   </div>
                   <div class="level-right">
                     <div class="level-item">
-                      <NuxtLink :to="hdr.associations.footer.bouton.route">
+                      <NuxtLink to="/associations/creation">
                         <b-button size="is-small">
-                          {{ capitalize(hdr.associations.footer.bouton.nom) }}
+                          {{ capitalize(hdr.associations.footer.bouton) }}
                         </b-button>
                       </NuxtLink>
                     </div>
@@ -194,9 +194,9 @@
                   </div>
                   <div class="level-right">
                     <div class="level-item">
-                      <NuxtLink :to="hdr.evenements.footer.bouton.route">
+                      <NuxtLink to="/reservations">
                         <b-button size="is-small">
-                          {{ capitalize(hdr.evenements.footer.bouton.nom) }}
+                          {{ capitalize(hdr.evenements.footer.bouton) }}
                         </b-button>
                       </NuxtLink>
                     </div>

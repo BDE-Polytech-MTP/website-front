@@ -130,10 +130,7 @@
     "footer": {
       "emoji": "🌱",
       "titre": "Crée ton association!",
-      "bouton": {
-        "nom": "C'est parti",
-        "route": "/associations/creation"
-      }
+      "bouton": "C'est parti"
     }
   },
   "evenements": {
@@ -178,10 +175,7 @@
     "footer": {
       "emoji": "🎟️",
       "titre": "Réservaaations!",
-      "bouton": {
-        "nom": "Vite vite!",
-        "route": "/reservations"
-      }
+      "bouton": "Vite vite!"
     }
   },
   "adhesions": {
