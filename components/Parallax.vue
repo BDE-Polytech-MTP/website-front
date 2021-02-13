@@ -1,15 +1,19 @@
 <template>
-  <section>
+  <section class="is-relative">
     <figure class="image">
       <img
         :src="require(`~/assets/img/${src}`)"
-        id="parallax-image"
+        :id="'parallax-image-' + getSize"
         :style="`object-position: 0 ${topPercentage}%;`"
       />
       <h1 id="parallax-title" class="title has-text-white" v-if="title">
         {{ title }}
       </h1>
     </figure>
+    <div v-if="scrollTo" class="parallax-scroller">
+      <Scroller :scrollTo="scrollTo" class="scroller-white" />
+    </div>
+    <slot></slot>
   </section>
 </template>
 
@@ -22,9 +26,20 @@ export default {
     src: { type: String, required: true },
     active: { type: Boolean, require: false, default: true },
     title: { type: String, required: false },
+    scrollTo: { type: String, required: false },
+    size: { type: String, required: false, default: null }, // [small|medium|fullscreen]
+  },
+  computed: {
+    getSize() {
+      if (this.size && (this.size == "medium" || this.size == "fullscreen")) {
+        return this.size;
+      } else {
+        return "small";
+      }
+    },
   },
   mounted() {
-    const img = document.getElementById("parallax-image");
+    const img = document.getElementById("parallax-image-" + this.getSize);
     window.addEventListener("scroll", () => {
       if (this.active) {
         var val = this.topPercentage + window.scrollY * this.speed;
@@ -36,6 +51,12 @@ export default {
 </script>
 
 <style lang="css">
+.parallax-scroller {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
 #parallax-title {
   background-image: linear-gradient(#00a5e2, #00a5e2);
   background-size: 0;
@@ -59,12 +80,20 @@ export default {
   background-size: 100%;
 }
 
-#parallax-image {
+#parallax-image-small {
   max-height: 50vh;
   object-fit: cover;
 }
+#parallax-image-medium {
+  max-height: 70vh;
+  object-fit: cover;
+}
+#parallax-image-fullscreen {
+  max-height: calc(100vh - 4.5rem);
+  object-fit: cover;
+}
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
-  #parallax-image {
+  #parallax-image-small {
     max-height: 47vh;
   }
   #parallax-title {
@@ -73,7 +102,7 @@ export default {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
-  #parallax-image {
+  #parallax-image-small {
     max-height: 45vh;
   }
   #parallax-title {
@@ -82,7 +111,7 @@ export default {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
-  #parallax-image {
+  #parallax-image-small {
     max-height: 45vh;
   }
   #parallax-title {
@@ -91,7 +120,7 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-  #parallax-image {
+  #parallax-image-small {
     max-height: 40vh;
   }
   #parallax-title {

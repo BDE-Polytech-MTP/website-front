@@ -4,11 +4,10 @@
       src="header.jpg"
       title="Fraternitech"
       :topPercentage="10"
-      :active="false"
+      :active="true"
+      size="fullscreen"
+      scrollTo="testID"
     />
-    <p class="has-text-centered has-text-primary mt-3">
-      <b-icon icon="chevron-down" size="is-large" />
-    </p>
     <Article
       title="Polytech Montpellier"
       subtitle="Associations d'élèves"
@@ -16,8 +15,7 @@
       startWithImage
       picture="mock.jpg"
     />
-
-    <Numbers :content="numbers" />
+    <Numbers :content="numbers" id="testID" />
   </section>
 </template>
 
