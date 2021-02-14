@@ -82,16 +82,14 @@ export default {
     },
     login() {
       if (this.email.valid && this.password.valid) {
-        //TODO: login the user with API
-        // this.$auth.loginWith("local", {
-        //   data: {
-        //     email: this.email.value,
-        //     password: this.password.value,
-        //   },
-        // });
-
-        //? Emit event
-        this.$emit("login");
+        this.$auth.loginWith("local", {
+          data: {
+            username: this.email.value,
+            password: this.password.value,
+          },
+        }).then(() => {
+          this.$emit("login");
+        })
       }
     },
   },
