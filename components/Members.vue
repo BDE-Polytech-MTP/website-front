@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <article class="section is-small">
+    <article class="section is-medium">
       <div class="columns is-align-items-center">
         <div class="column p-5" v-if="map">
           <iframe
@@ -13,7 +13,7 @@
           />
         </div>
         <div class="column p-5">
-          <p class="subtitle has-text-info is-size-5 is-italic">
+          <p class="subtitle is-size-5 is-family-monospace has-text-primary">
             {{ subtitle }}
           </p>
           <h1 class="title is-1">

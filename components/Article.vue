@@ -14,7 +14,7 @@
           </figure>
         </div>
         <div class="column p-5" v-else>
-          <p class="subtitle has-text-info is-size-5 is-italic">
+          <p class="subtitle has-text-info is-size-5 is-family-monospace">
             {{ subtitle }}
           </p>
           <h1 class="title is-1">
@@ -43,7 +43,7 @@
           </figure>
         </div>
         <div class="column p-5" v-else>
-          <p class="subtitle has-text-info is-size-5 is-italic">
+          <p class="subtitle has-text-info is-size-5 is-family-monospace">
             {{ subtitle }}
           </p>
           <h1 class="title is-1">

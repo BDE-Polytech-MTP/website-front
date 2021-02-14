@@ -1,6 +1,6 @@
 <template>
   <div
-    class="section is-medium remove-padding-x"
+    class="section is-unselectable"
     style="padding-left: 0; padding-right: 0"
   >
     <section :class="'hero is-medium is-bold ' + theme">

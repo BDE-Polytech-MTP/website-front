@@ -14,8 +14,9 @@
       :contents="contents"
       startWithImage
       picture="mock.jpg"
+      id="testID"
     />
-    <Numbers :content="numbers" id="testID" />
+    <Numbers :content="numbers" />
   </section>
 </template>
 
@@ -29,6 +30,7 @@ export default {
       ],
       numbers: [
         { titre: "Prix compétitif", valeur: "50€" },
+        { titre: "semaines", valeur: 34 },
         { titre: "étudiants", valeur: 561 },
         { titre: "professeurs", valeur: 192 },
       ],

@@ -40,17 +40,17 @@ export default {
   position: absolute;
   top: 20%;
   left: 50%;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   transform: translate(-50%, -100%) rotate(45deg);
-  border: solid 2px #00a5e2;
+  border: solid 3px #00a5e2;
   border-top: transparent;
   border-left: transparent;
-  animation: scroll-down 1s ease-in-out infinite;
+  animation: scroll-down 2s ease-in-out infinite;
 }
 .scroll-down::after {
   top: 30%;
-  animation-delay: 0.3s;
+  animation-delay: 0.6s;
 }
 
 @keyframes scroll-down {
@@ -61,7 +61,7 @@ export default {
     opacity: 1;
   }
   60% {
-    opacity: 1;
+    opacity: 0.5;
   }
   100% {
     opacity: 0;
@@ -80,6 +80,7 @@ export default {
 @media screen and (max-width: 768px) {
   .scroll-down::before,
   .scroll-down::after {
+    border: solid 2px #00a5e2;
     height: 10px;
     width: 10px;
   }

@@ -6,7 +6,11 @@
         :id="'parallax-image-' + getSize"
         :style="`object-position: 0 ${topPercentage}%;`"
       />
-      <h1 id="parallax-title" class="title has-text-white" v-if="title">
+      <h1
+        id="parallax-title"
+        class="title has-text-white is-unselectable"
+        v-if="title"
+      >
         {{ title }}
       </h1>
     </figure>

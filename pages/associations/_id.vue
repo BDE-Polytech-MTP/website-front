@@ -20,7 +20,7 @@
       </ul>
     </Article>
     <aside
-      class="hero is-primary is-bold"
+      class="hero is-primary is-bold is-unselectable"
       v-if="association.horaires || association.lieu"
     >
       <div class="hero-body has-text-centered">
