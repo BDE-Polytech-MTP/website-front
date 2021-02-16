@@ -1,22 +1,44 @@
 <template>
-  <section>
+  <section class="background-gradient">
     <Parallax
+      class="background-gradient-lines"
       src="header.jpg"
       title="Fraternitech"
       :topPercentage="10"
-      :active="true"
+      :active="false"
       size="fullscreen"
       scrollTo="testID"
     />
-    <Article
-      title="Polytech Montpellier"
-      subtitle="Associations d'élèves"
-      :contents="contents"
-      startWithImage
-      picture="mock.jpg"
-      id="testID"
+    <div class="background-gradient-lines">
+      <Article
+        title="Polytech Montpellier"
+        subtitle="Associations d'élèves"
+        :contents="contents"
+        startWithImage
+        picture="mock.jpg"
+        id="testID"
+      />
+    </div>
+
+    <Assets
+      :assets="[
+        'Unlimited tasks',
+        'SMS Task Reminders',
+        'Confetti Explosions upon Task Completions',
+        'Social Media announcements',
+        'Real time Collaboration',
+        'Other Awesome features',
+      ]"
+      picture="people.jpg"
     />
-    <Numbers :content="numbers" />
+    <div class="background-gradient-lines">
+      <Features
+        title="Le weekend parfait"
+        subtitle="Aller c'est parti, suis nous le temps d'un weekend sur la cote Atlantique"
+        :features="features"
+      />
+      <Numbers :content="numbers" />
+    </div>
   </section>
 </template>
 
@@ -34,72 +56,32 @@ export default {
         { titre: "étudiants", valeur: 561 },
         { titre: "professeurs", valeur: 192 },
       ],
+      features: [
+        {
+          titre: "Du beau temps",
+          description: "C'est promis il fera beau tout le weekend",
+          emoji: "⛅",
+        },
+        {
+          titre: "Dans la nature",
+          description: "Tu ne sera pas déçu de l'emplacement",
+          emoji: "🌿",
+        },
+        {
+          titre: "De la bière",
+          description: "Ce doux breuvage subtil sera distribué à volonté",
+          emoji: "🍺",
+        },
+        {
+          titre: "Des vagues",
+          description: "T'es même pas prêt pour ces vagues de dingue !",
+          emoji: "🌊",
+        },
+      ],
     };
   },
 };
 </script>
 
-<style lang="css" scoped>
-#header {
-  width: 100%;
-  height: 70vh;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-image: url("~assets/img/header.jpg");
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  user-select: none;
-}
-
-#header-title {
-  background-image: linear-gradient(#00a5e2, #00a5e2);
-  background-size: 0;
-  background-repeat: no-repeat;
-  display: inline;
-  transition: 0.6s ease;
-  font-size: 9rem;
-}
-
-#header-title:hover {
-  background-size: 100%;
-}
-
-@media screen and (min-width: 1216px) and (max-width: 1407px) {
-  #header-title {
-    font-size: 7.5em;
-  }
-  #header {
-    height: 65vh;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1215px) {
-  #header-title {
-    font-size: 6rem;
-  }
-  #header {
-    height: 60vh;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-  #header-title {
-    font-size: 4.5rem;
-  }
-  #header {
-    height: 55vh;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #header-title {
-    font-size: 3rem;
-  }
-  #header {
-    height: 50vh;
-  }
-}
+<style lang="css">
 </style>
