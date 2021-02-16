@@ -37,7 +37,7 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
-    baseURL: "http://localhost:3000/api"
+    baseURL: "http://localhost:3001/"
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
@@ -52,12 +52,23 @@ export default {
     },
     strategies: {
       local: {
-        endpoints: {
-          login: { url: "/login", method: "post", propertyName: "token" },
-          user: { url: "/user", method: "get", propertyName: "user" }
+        scheme: 'refresh',
+        token: {
+          property: 'access_token'
         },
-        tokenType: "bearer"
-      }
+        refreshToken: {
+          property: 'refresh_token'
+        },
+        endpoints: {
+          login: { url: '/oauth/token', method: 'post' },
+          refresh: { url: '/oauth/token', method: 'post' },
+          user: false,
+          logout: false
+        },
+        tokenType: "bearer",
+        grantType: 'password',
+        scope: []
+      },
     }
   }
 };

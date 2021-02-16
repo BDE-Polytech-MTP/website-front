@@ -301,10 +301,11 @@ export default {
       });
     },
     handleLogout() {
-      //TODO: logout user
-      this.$buefy.toast.open({
-        message: "Tu es maintenant déconnecté 🌙",
-        type: "is-warning",
+      this.$auth.logout().then(() => {
+        this.$buefy.toast.open({
+          message: "Tu es maintenant déconnecté 🌙",
+          type: "is-warning",
+        });
       });
     },
   },
