@@ -18,7 +18,7 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .scroll-container {
   position: relative;
   height: 60px;

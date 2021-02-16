@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="background-gradient-dotted">
     <Article
       title="Adhésions"
       subtitle="Rejoins nous!"

@@ -54,7 +54,7 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .parallax-scroller {
   position: absolute;
   bottom: 0;

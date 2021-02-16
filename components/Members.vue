@@ -46,7 +46,7 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 iframe {
   max-height: 50vh;
   min-height: 40vh;
