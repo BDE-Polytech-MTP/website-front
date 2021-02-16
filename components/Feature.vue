@@ -44,9 +44,19 @@ export default {
   -webkit-transition: transform 0.1s ease-in-out;
 }
 
+.feature-card:hover .feature-emoji {
+  transform: scale(1.2) rotate(360deg);
+}
+
+.feature-emoji {
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
 @media screen and (min-width: 769px) {
   .feature-card {
-    max-width: 20rem;
+    max-width: 18rem;
   }
 }
 </style>
