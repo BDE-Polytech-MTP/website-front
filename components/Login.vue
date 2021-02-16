@@ -28,6 +28,11 @@
         passwordReveal
         required
       />
+      <b-loading
+        v-model="isLoading"
+        :is-full-page="false"
+        :can-cancel="false"
+      />
     </section>
     <footer class="modal-card-foot">
       <b-button label="Retour" @click="$emit('close')" />
@@ -47,6 +52,7 @@ export default {
   name: "Login",
   data() {
     return {
+      isLoading: false,
       email: {
         valid: false,
         value: null,
@@ -77,19 +83,28 @@ export default {
       this.password.valid = valid;
       this.password.value = value;
     },
-    updateButton() {
-      this.button.disabled = !(this.password.valid && this.email.valid);
-    },
     login() {
-      if (this.email.valid && this.password.valid) {
-        this.$auth.loginWith("local", {
-          data: {
-            username: this.email.value,
-            password: this.password.value,
-          },
-        }).then(() => {
-          this.$emit("login");
-        })
+      if (!this.isDisabled) {
+        this.isLoading = true;
+        this.$auth
+          .loginWith("local", {
+            data: {
+              username: this.email.value,
+              password: this.password.value,
+            },
+          })
+          .then(() => {
+            this.$emit("login");
+          })
+          .catch(() => {
+            this.$buefy.toast.open({
+              message: "Impossible de se connecter au serveur ❌",
+              type: "is-danger",
+            });
+          })
+          .finally(() => {
+            this.isLoading = false;
+          });
       }
     },
   },
