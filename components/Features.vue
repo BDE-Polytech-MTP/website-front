@@ -10,7 +10,7 @@
       <ul
         class="is-flex is-align-items-center is-flex-wrap-wrap is-justify-content-space-around"
       >
-        <li v-for="element in features" v-bind:key="element">
+        <li v-for="element in features" v-bind:key="element.titre">
           <Feature
             :emoji="element.emoji"
             :title="element.titre"
@@ -26,8 +26,8 @@
 export default {
   props: {
     features: { type: Array, required: true },
-    title: { type: Array, required: false },
-    subtitle: { type: Array, required: false },
+    title: { type: String, required: false },
+    subtitle: { type: String, required: false },
   },
 };
 </script>
