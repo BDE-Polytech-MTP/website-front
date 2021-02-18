@@ -9,7 +9,17 @@
       size="fullscreen"
       scrollTo="testID"
     />
+
     <div class="background-gradient-lines">
+      <Countdown
+        to="2021-03-18T18:58:30Z"
+        title="Ouverture billeterie"
+        subtitle="Prépares ta carte bleue et ta calculatrice, tu me remercieras plus
+          tard..."
+      >
+        <b-button type="is-primary">Prendre ma place</b-button>
+        <b-button>Retour</b-button>
+      </Countdown>
       <Article
         title="Polytech Montpellier"
         subtitle="Associations d'élèves"
