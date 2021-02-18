@@ -21,6 +21,14 @@
 import hydration from "~/static/data.json";
 
 export default {
+  name: "bureaux_id",
+  validate({ params }) {
+    return (
+      (this.bureau = hydration.bureaux.elements.filter((elt) => {
+        return elt.id == params.id;
+      })[0]) != undefined
+    );
+  },
   data() {
     return {
       bureau: null,

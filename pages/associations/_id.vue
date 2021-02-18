@@ -41,6 +41,17 @@
 import hydration from "~/static/data.json";
 export default {
   name: "associations_id",
+  validate({ params }) {
+    let res = false;
+    hydration.associations.elements.forEach((type) => {
+      type.elements.forEach((elt) => {
+        if (elt.nom.toLowerCase().replace(" ", "-") == params.id) {
+          res = true;
+        }
+      });
+    });
+    return res;
+  },
   data() {
     return {
       association: null,
