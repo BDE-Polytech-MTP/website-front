@@ -1,5 +1,5 @@
 <template>
-  <div>compte</div>
+  <div>{{ $auth.user }}</div>
 </template>
 
 <script>

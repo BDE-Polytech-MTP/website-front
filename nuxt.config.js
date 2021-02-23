@@ -62,8 +62,11 @@ export default {
         endpoints: {
           login: { url: '/oauth/token', method: 'post' },
           refresh: { url: '/oauth/token', method: 'post' },
-          user: false,
+          user: { url: '/graphql?query=query{me{firstname,lastname,specialty{shortName,year},bde{id,name}}}' },
           logout: false
+        },
+        user: {
+          property: "data.me"
         },
         tokenType: "bearer",
         grantType: 'password',
