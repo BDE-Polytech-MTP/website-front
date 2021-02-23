@@ -11,6 +11,7 @@
         <ResetPassword
           @close="closeModal()"
           @resetPassword="handleResetPassword()"
+          :token="this.token"
         />
       </div>
     </b-modal>
@@ -46,10 +47,10 @@ export default {
     this.token = this.$route.query.token;
     const loadingComponent = this.$buefy.loading.open({ container: null });
     this.$axios
-      .get("/api/token/" + this.token)
-      .then((data) => {
+      .get("/api/account/password-reset/check?token=" + this.token)
+      .then((response) => {
         loadingComponent.close();
-        if (data) {
+        if (response.status === 200 && response.data.valid) {
           this.tokenValid = true;
           this.isResetPasswordModalActive = true;
         } else {

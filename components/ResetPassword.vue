@@ -50,6 +50,9 @@
 <script>
 import { passwordValidation } from "~/plugins/validators";
 export default {
+  props: {
+    token: { type: String, required: true }
+  },
   name: "ResetPassword",
   data() {
     return {
@@ -88,9 +91,13 @@ export default {
     reset() {
       if (!this.isDisabled) {
         this.isLoading = true;
-        //TODO: send change to API !
-        this.isLoading = false;
-        this.$emit("resetPassword");
+        this.$axios.post('/api/account/password-reset/reset?token=' + this.token, {
+          password: this.password.value
+        }).then(() => {
+          this.$emit("resetPassword");
+        }).finally(() => {
+          this.isLoading = false;
+        })
       }
     },
   },
