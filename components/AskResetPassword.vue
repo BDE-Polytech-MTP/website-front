@@ -1,31 +1,18 @@
 <template>
   <div class="modal-card" style="width: auto; min-width: 25vw">
     <header class="modal-card-head">
-      <p class="modal-card-title">Connexion</p>
+      <p class="modal-card-title">Demande de reset de mot de passe</p>
       <button type="button" class="delete" @click="$emit('close')" />
     </header>
     <section class="modal-card-body">
       <InputField
-        id="emailLogin"
+        id="emailReset"
         label="Adresse e-mail"
         icon="email-outline"
         message="Adresse invalide"
         :expanded="true"
         @update="emailUpdate"
         :validator="emailValidator"
-        required
-      />
-
-      <InputField
-        id="passwordLogin"
-        label="Mot de passe"
-        icon="lock-outline"
-        message="Doit contenir 8 caractères dont 1 chiffre et 1 symbole"
-        type="password"
-        @update="passwordUpdate"
-        :validator="passwordValidator"
-        expanded
-        passwordReveal
         required
       />
       <b-loading
@@ -37,22 +24,17 @@
     <footer class="modal-card-foot">
       <b-button label="Retour" @click="$emit('close')" />
       <b-button
-        @click="login()"
-        label="Se connecter"
+        @click="askForResetEmail()"
+        label="Envoyer le mail"
         type="is-primary"
         :disabled="isDisabled"
-      />
-      <b-button 
-        label="Mot de passe oublié" 
-        @click="forgotPassword()" 
-        type="is-text" 
       />
     </footer>
   </div>
 </template>
 
 <script>
-import { mailValidation, passwordValidation } from "~/plugins/validators";
+import { mailValidation } from "~/plugins/validators";
 export default {
   name: "Login",
   data() {
@@ -72,11 +54,8 @@ export default {
     emailValidator() {
       return mailValidation;
     },
-    passwordValidator() {
-      return passwordValidation;
-    },
     isDisabled() {
-      return !this.email.valid || !this.password.valid;
+      return !this.email.valid;
     },
   },
   methods: {
@@ -84,22 +63,15 @@ export default {
       this.email.valid = valid;
       this.email.value = value;
     },
-    passwordUpdate(valid, value) {
-      this.password.valid = valid;
-      this.password.value = value;
-    },
-    login() {
+    askForResetEmail() {
       if (!this.isDisabled) {
         this.isLoading = true;
-        this.$auth
-          .loginWith("local", {
-            data: {
-              username: this.email.value,
-              password: this.password.value,
-            },
+        this.$axios
+          .post('/api/account/password-reset/send', {
+              email: this.email.value
           })
           .then(() => {
-            this.$emit("login");
+            this.$emit("sent");
           })
           .catch(() => {
             this.$buefy.toast.open({
@@ -112,10 +84,6 @@ export default {
           });
       }
     },
-    forgotPassword() {
-      this.$emit('close');
-      this.$router.push('/compte/demande-reset-mot-de-passe');
-    }
   },
 };
 </script>
