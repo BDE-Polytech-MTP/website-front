@@ -59,7 +59,11 @@ export default {
       })
       .catch(() => {
         loadingComponent.close();
-        //this.$router.push("/");
+        this.$buefy.toast.open({
+          message: 'Ce lien de redéfinition de mot de passe est invalide ❌',
+          type: 'is-danger'
+        });
+        this.$router.push("/");
         this.tokenValid = true;
         this.isResetPasswordModalActive = true;
       });
