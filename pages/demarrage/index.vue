@@ -70,6 +70,7 @@
         step="3" 
         label="Admin"
         :type="state.adminInfoState"
+        :clickable="false"
       >
         <h1 class="title has-text-centered">Compte administrateur</h1>
 
