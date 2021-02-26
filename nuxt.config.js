@@ -39,7 +39,14 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
-    baseURL: process.env.BACKEND_URL || "http://localhost:3001/"
+    baseURL: "http://localhost:3001/",
+  },
+
+  publicRuntimeConfig: {
+    axios: {
+      browserBaseURL: process.env.BACKEND_URL || '/',
+      https: true,
+    }
   },
 
   apollo: {
