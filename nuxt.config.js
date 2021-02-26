@@ -32,12 +32,20 @@ export default {
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
     // https://auth.nuxtjs.org
-    "@nuxtjs/auth-next"
+    "@nuxtjs/auth-next",
+    // https://github.com/nuxt-community/apollo-module
+    "@nuxtjs/apollo",
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
     baseURL: process.env.BACKEND_URL || "http://localhost:3001/"
+  },
+
+  apollo: {
+    clientConfigs: {
+      default: "~/plugins/auth-linker.js"
+    }
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

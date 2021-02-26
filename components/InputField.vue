@@ -60,14 +60,17 @@ export default {
     message: { type: String, required: false },
     timeout: { type: Number, required: false, default: 300 },
     addons: { type: String, required: false },
+    value: { required: false },
   },
   data() {
+    const startValue = this.value || "";
+    const formatValid = this.validator ? this.validator.call(null, startValue) : true;
     return {
-      debouncedFieldInput: "",
+      debouncedFieldInput: startValue,
       d_timeout: undefined,
       field: {
         loading: false,
-        valid: false,
+        valid: formatValid && (!this.required || startValue ),
       },
     };
   },

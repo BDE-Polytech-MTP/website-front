@@ -34,9 +34,19 @@ function integerValidation(input) {
   }
 }
 
+function firstnameValidation(input) {
+  return input && input.length > 0 && input.length <= 30;
+}
+
+function lastnameValidation(input) {
+  return input && input.length > 0 && input.length <= 40;
+}
+
 export {
   mailValidation,
   passwordValidation,
   textValidation,
-  integerValidation
+  integerValidation,
+  firstnameValidation,
+  lastnameValidation
 };

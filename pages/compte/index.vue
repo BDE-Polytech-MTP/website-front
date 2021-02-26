@@ -3,7 +3,23 @@
 </template>
 
 <script>
-export default {};
+import gql from 'graphql-tag'
+
+export default {
+
+  apollo: {
+    me: {
+      query: gql`query { me { firstname } }`
+    }
+  },
+
+  data() {
+    return {
+      me: {}
+    }
+  }
+
+};
 </script>
 
 <style lang="css" scoped>
