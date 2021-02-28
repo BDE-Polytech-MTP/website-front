@@ -1,6 +1,6 @@
 export default function(context) {
     return {
-        httpEndpoint: `http://localhost:3001/graphql`,
+        httpEndpoint: `${context.env.API_URL}graphql`,
         getAuth: () => {
             return context.$auth.token
         }

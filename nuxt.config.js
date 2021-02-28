@@ -1,6 +1,15 @@
+function getApiURL() {
+  return process.env.API_URL || "http://localhost:3001/";
+}
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: "static",
+
+  env: {
+    API_URL: getApiURL(),
+    API_URL_BROWSER: getApiURL(),
+  },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -39,14 +48,8 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
-    baseURL: "http://localhost:3001/",
-  },
-
-  publicRuntimeConfig: {
-    axios: {
-      browserBaseURL: process.env.BACKEND_URL || '/',
-      https: true,
-    }
+    baseURL: getApiURL(),
+    browserBaseURL: getApiURL(),
   },
 
   apollo: {
