@@ -206,6 +206,16 @@
             </div>
           </div>
         </div>
+
+        <div
+          class="navbar-item"
+          v-if="!$auth.loggedIn"
+          @click="toggle('burger')"
+        >
+          <NuxtLink to="/compte">
+            <p style="color: #4a4a4a">Compte</p>
+          </NuxtLink>
+        </div>
       </div>
 
       <div class="navbar-end mr-4">
