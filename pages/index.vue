@@ -3,7 +3,7 @@
     <Parallax
       class="background-gradient-lines"
       src="header.jpg"
-      title="Fraternitech"
+      title="Montpellier"
       :topPercentage="10"
       :active="false"
       size="fullscreen"
@@ -12,7 +12,7 @@
 
     <div class="background-gradient-lines">
       <Countdown
-        to="2021-03-18T18:58:30Z"
+        to="2021-02-21T21:31:00Z"
         title="Ouverture billeterie"
         subtitle="Prépares ta carte bleue et ta calculatrice, tu me remercieras plus
           tard..."

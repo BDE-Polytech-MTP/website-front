@@ -1,24 +1,28 @@
 <template>
-  <div>{{ $auth.user }}</div>
+  <div>{{ $auth.user }} compte</div>
 </template>
 
 <script>
-import gql from 'graphql-tag'
+import gql from "graphql-tag";
 
 export default {
-
   apollo: {
     me: {
-      query: gql`query { me { firstname } }`
-    }
+      query: gql`
+        query {
+          me {
+            firstname
+          }
+        }
+      `,
+    },
   },
 
   data() {
     return {
-      me: {}
-    }
-  }
-
+      me: {},
+    };
+  },
 };
 </script>
 
