@@ -26,7 +26,7 @@
         <div class="navbar-item has-dropdown is-hoverable">
           <p class="navbar-link" @click="toggle('bureaux')">Bureaux</p>
           <div id="bureaux" :class="'navbar-dropdown ' + dropdowns.bureaux">
-            <div v-for="bureau in hdr.bureaux.elements" v-bind:key="bureau.id">
+            <div v-for="bureau in hdr.bureaux" v-bind:key="bureau.id">
               <NuxtLink class="navbar-item" :to="'/bureaux/' + bureau.id">
                 <div class="level is-mobile">
                   <div class="level-left">
@@ -50,18 +50,13 @@
                 <div class="level is-mobile">
                   <div class="level-left">
                     <div class="level-item">
-                      <strong
-                        >{{ hdr.bureaux.footer.emoji }}
-                        {{ capitalize(hdr.bureaux.footer.titre) }}</strong
-                      >
+                      <strong>🏅 Adhésions</strong>
                     </div>
                   </div>
                   <div class="level-right">
                     <div class="level-item">
                       <NuxtLink to="/adhesions">
-                        <b-button size="is-small">
-                          {{ capitalize(hdr.bureaux.footer.bouton) }}
-                        </b-button>
+                        <b-button size="is-small"> Plus d'infos </b-button>
                       </NuxtLink>
                     </div>
                   </div>
@@ -82,7 +77,7 @@
               <div class="columns">
                 <div
                   class="column"
-                  v-for="group in hdr.associations.elements"
+                  v-for="group in hdr.associations"
                   v-bind:key="group.type"
                 >
                   <h1 class="title is-6 is-mega-menu-title">
@@ -122,18 +117,13 @@
                 <div class="level is-mobile">
                   <div class="level-left">
                     <div class="level-item">
-                      <strong
-                        >{{ hdr.associations.footer.emoji }}
-                        {{ capitalize(hdr.associations.footer.titre) }}</strong
-                      >
+                      <strong>🌱 Crée ton association!</strong>
                     </div>
                   </div>
                   <div class="level-right">
                     <div class="level-item">
                       <NuxtLink to="/associations/creation">
-                        <b-button size="is-small">
-                          {{ capitalize(hdr.associations.footer.bouton) }}
-                        </b-button>
+                        <b-button size="is-small"> C'est parti </b-button>
                       </NuxtLink>
                     </div>
                   </div>
@@ -154,7 +144,7 @@
               <div class="columns">
                 <div
                   class="column"
-                  v-for="group in hdr.evenements.elements"
+                  v-for="group in hdr.evenements"
                   v-bind:key="group.type"
                 >
                   <h1 class="title is-6 is-mega-menu-title">
@@ -181,23 +171,18 @@
             </div>
 
             <hr class="navbar-divider" />
-            <div class="navbar-item" v-if="$auth.loggedIn">
+            <div class="navbar-item">
               <div class="navbar-content">
                 <div class="level is-mobile">
                   <div class="level-left">
                     <div class="level-item">
-                      <strong
-                        >{{ hdr.evenements.footer.emoji }}
-                        {{ capitalize(hdr.evenements.footer.titre) }}</strong
-                      >
+                      <strong>🎟️ Réservaaations!</strong>
                     </div>
                   </div>
                   <div class="level-right">
                     <div class="level-item">
                       <NuxtLink to="/reservations">
-                        <b-button size="is-small">
-                          {{ capitalize(hdr.evenements.footer.bouton) }}
-                        </b-button>
+                        <b-button size="is-small"> Vite vite! </b-button>
                       </NuxtLink>
                     </div>
                   </div>
@@ -209,7 +194,7 @@
 
         <div
           class="navbar-item"
-          v-if="!$auth.loggedIn"
+          v-if="$auth.loggedIn"
           @click="toggle('burger')"
         >
           <NuxtLink to="/compte">
@@ -265,68 +250,68 @@
 </template>
 
 <script>
-import hydration from "~/static/data.json";
-import social from "~/static/social-networks.json";
+import website from '~/static/website.json';
+import social from '~/static/social-networks.json';
 
 export default {
-  name: "Navbar",
+  name: 'Navbar',
   data() {
     return {
-      hdr: hydration,
+      hdr: website,
       social: social,
       dropdowns: {
-        burger: "",
-        evenements: "",
-        bureaux: "",
-        associations: "",
+        burger: '',
+        evenements: '',
+        bureaux: '',
+        associations: '',
       },
       isLoginModalActive: false,
     };
   },
   methods: {
     toggle(dropdown) {
-      if (this.dropdowns[dropdown] == "") {
-        this.dropdowns[dropdown] = "is-active";
+      if (this.dropdowns[dropdown] == '') {
+        this.dropdowns[dropdown] = 'is-active';
       } else {
-        this.dropdowns[dropdown] = "";
+        this.dropdowns[dropdown] = '';
       }
     },
     capitalize(string) {
       return string.charAt(0).toUpperCase() + string.slice(1);
     },
     socialNetworkRedirect(url) {
-      window.open(url, "_blank");
+      window.open(url, '_blank');
     },
     handleLike() {
       this.$buefy.toast.open({
         message: "Merci d'avoir donné ton avis 💗",
-        type: "is-danger",
+        type: 'is-danger',
       });
     },
     handleLogin() {
       this.isLoginModalActive = false;
       this.$buefy.toast.open({
-        message: "Tu es maintenant connecté ✅",
-        type: "is-success",
+        message: 'Tu es maintenant connecté ✅',
+        type: 'is-success',
       });
     },
     handleLogout() {
       this.$auth.logout().then(() => {
         this.$buefy.toast.open({
-          message: "Tu es maintenant déconnecté 🌙",
-          type: "is-warning",
+          message: 'Tu es maintenant déconnecté 🌙',
+          type: 'is-warning',
         });
       });
     },
   },
   mounted() {
-    const navbar = document.getElementById("navBar");
-    const dropdowns = navbar.querySelectorAll(".navbar-dropdown");
+    const navbar = document.getElementById('navBar');
+    const dropdowns = navbar.querySelectorAll('.navbar-dropdown');
     dropdowns.forEach((dp) => {
-      dp.addEventListener("click", () => {
-        navbar.classList.remove("is-active");
-        dp.classList.remove("is-active");
-        this.toggle("burger");
+      dp.addEventListener('click', () => {
+        navbar.classList.remove('is-active');
+        dp.classList.remove('is-active');
+        this.toggle('burger');
       });
     });
   },

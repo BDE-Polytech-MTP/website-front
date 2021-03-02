@@ -1,0 +1,14 @@
+{
+  "assets": {
+    "id": "someID",
+    "data": [
+      "Unlimited tasks",
+      "SMS Task Reminders",
+      "Confetti Explosions upon Task Completions",
+      "Social Media announcements",
+      "Real time Collaboration",
+      "Other Awesome features"
+    ],
+    "picture": "people.jpg"
+  }
+}

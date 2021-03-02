@@ -1,0 +1,409 @@
+{
+  "main": [
+    {
+      "parallax": {
+        "id": "mainParallax",
+        "size": "fullscreen",
+        "active": true,
+        "speed": 0.1,
+        "picture": "header.jpg",
+        "title": "Montpellier",
+        "topPercentage": 10,
+        "scrollTo": "firstID"
+      }
+    },
+    {
+      "article": {
+        "id": "firstID",
+        "title": "Polytech Montpellier",
+        "subtitle": "Associations d'élèves",
+        "contents": ["Some content here", "Some other content here"],
+        "picture": "mock.jpg",
+        "pictureFirst": true
+      }
+    },
+    {
+      "numbers": {
+        "id": "numbersID",
+        "theme": "is-primary",
+        "data": [
+          {
+            "title": "Prix compétitif",
+            "value": "50€"
+          },
+          {
+            "title": "Etudiants",
+            "value": 561
+          },
+          {
+            "title": "Professeurs",
+            "value": 293
+          }
+        ]
+      }
+    },
+    {
+      "features": {
+        "id": "weekendAtlantique",
+        "title": "Le weekend parfait !",
+        "subtitle": "Aller c'est parti, suis nous le temps d'un weekend sur la cote Atlantique",
+        "data": [
+          {
+            "title": "Du beau temps",
+            "subtitle": "C'est promis il fera beau tout le weekend",
+            "emoji": "⛅"
+          },
+          {
+            "title": "Dans la nature",
+            "subtitle": "Tu ne sera pas déçu de l'emplacement",
+            "emoji": "🌿"
+          },
+          {
+            "title": "De la bière",
+            "subtitle": "Ce doux breuvage subtil sera distribué à volonté",
+            "emoji": "🍺"
+          },
+          {
+            "title": "Des vagues",
+            "subtitle": "T'es même pas prêt pour ces vagues de dingue !",
+            "emoji": "🌊"
+          }
+        ]
+      }
+    },
+    {
+      "assets": {
+        "id": "someID",
+        "data": [
+          "Unlimited tasks",
+          "SMS Task Reminders",
+          "Confetti Explosions upon Task Completions",
+          "Social Media announcements",
+          "Real time Collaboration",
+          "Other Awesome features"
+        ],
+        "picture": "people.jpg"
+      }
+    },
+    {
+      "picture": {
+        "id": "bde-organigram",
+        "picture": "organigram.jpg"
+      }
+    }
+  ],
+  "adhesions": [
+    {
+      "article": {
+        "id": "adhesionArticle",
+        "title": "Adhésions",
+        "subtitle": "Rejoins nous !",
+        "contents": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum.",
+          "Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique."
+        ],
+        "picture": "organigram.jpg",
+        "pictureFirst": false
+      }
+    },
+    {
+      "assets": {
+        "id": "someID",
+        "data": [
+          "Unlimited tasks",
+          "SMS Task Reminders",
+          "Confetti Explosions upon Task Completions",
+          "Social Media announcements",
+          "Real time Collaboration",
+          "Other Awesome features"
+        ],
+        "picture": "people.jpg"
+      }
+    }
+  ],
+  "bureaux": [
+    {
+      "id": "bde",
+      "nom": "Bureau des étudiants",
+      "header": "Toujours prêt à t'accompagner",
+      "emoji": "🎒",
+      "president": "Joe Biden",
+      "body": [
+        {
+          "article": {
+            "id": "bdeArticle",
+            "title": "Bureau des étudiants",
+            "subtitle": "Bureaux",
+            "contents": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum.",
+              "Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique."
+            ],
+            "picture": "organigram.jpg",
+            "pictureFirst": true
+          }
+        },
+        {
+          "picture": {
+            "id": "bde-organigram",
+            "picture": "organigram.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bds",
+      "nom": "Bureau des sports",
+      "header": "petit description",
+      "emoji": "🏐",
+      "president": "Donald Trump",
+      "body": [
+        {
+          "article": {
+            "id": "bdsArticle",
+            "title": "Bureau des sports",
+            "subtitle": "Bureaux",
+            "contents": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum.",
+              "Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique."
+            ],
+            "picture": "organigram.jpg",
+            "pictureFirst": true
+          }
+        },
+        {
+          "picture": {
+            "id": "bde-organigram",
+            "picture": "organigram.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bda",
+      "nom": "Bureau des arts",
+      "header": "petit description",
+      "emoji": "🎨",
+      "president": "Julien Lepers",
+      "body": [
+        {
+          "article": {
+            "id": "bdaArticle",
+            "title": "Bureau des arts",
+            "subtitle": "Bureaux",
+            "contents": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum.",
+              "Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique."
+            ],
+            "picture": "organigram.jpg",
+            "pictureFirst": true
+          }
+        },
+        {
+          "picture": {
+            "id": "bde-organigram",
+            "picture": "organigram.jpg"
+          }
+        }
+      ]
+    }
+  ],
+  "associations": [
+    {
+      "type": "Sportives",
+      "emoji": "🏐",
+      "elements": [
+        {
+          "nom": "Badminton",
+          "responsable": "John Doe",
+          "emoji": "🏸",
+          "body": [
+            {
+              "article": {
+                "id": "badmintonArticle",
+                "title": "Badminton",
+                "subtitle": "Associations",
+                "contents": [
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum.",
+                  "Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique."
+                ],
+                "picture": "organigram.jpg",
+                "pictureFirst": true
+              }
+            },
+            {
+              "timeLocation": {
+                "id": "timeLocationBadminton",
+                "time": "Mercredi 20h-22h",
+                "location": "Gymnase Arthur Rimbaud"
+              }
+            },
+            {
+              "members": {
+                "id": "badmintonMembers",
+                "title": "La fine équipe",
+                "subtitle": "Membres",
+                "members": ["John Doe", "Alice Evergreen", "Paul Mylo"],
+                "gmap": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d360.9634225216508!2d3.8437114840086686!3d43.63344900493854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1612545523839!5m2!1sfr!2sfr"
+              }
+            }
+          ]
+        },
+        {
+          "nom": "Escalade",
+          "responsable": "Gilbert Montagné",
+          "emoji": "🧗‍♀️",
+          "body": [
+            {
+              "members": {
+                "id": "someID",
+                "title": "La fine équipe",
+                "subtitle": "Membres",
+                "members": ["John Doe", "Alice Evergreen", "Paul Mylo"],
+                "gmap": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d360.9634225216508!2d3.8437114840086686!3d43.63344900493854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1612545523839!5m2!1sfr!2sfr"
+              }
+            }
+          ]
+        },
+        {
+          "nom": "Basket",
+          "responsable": "Jean Castex",
+          "emoji": "🏀",
+          "body": [
+            {
+              "members": {
+                "id": "someID",
+                "title": "La fine équipe",
+                "subtitle": "Membres",
+                "members": ["John Doe", "Alice Evergreen", "Paul Mylo"],
+                "gmap": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d360.9634225216508!2d3.8437114840086686!3d43.63344900493854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1612545523839!5m2!1sfr!2sfr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Artistiques",
+      "emoji": "🎨",
+      "elements": [
+        {
+          "nom": "Musique",
+          "responsable": "Stephane Plazza",
+          "emoji": "🎼",
+          "body": [
+            {
+              "members": {
+                "id": "someID",
+                "title": "La fine équipe",
+                "subtitle": "Membres",
+                "members": ["John Doe", "Alice Evergreen", "Paul Mylo"],
+                "gmap": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d360.9634225216508!2d3.8437114840086686!3d43.63344900493854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1612545523839!5m2!1sfr!2sfr"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Autres",
+      "emoji": "🍃",
+      "elements": [
+        {
+          "nom": "Polyearth",
+          "responsable": "Alain Delon",
+          "emoji": "♻️",
+          "body": [
+            {
+              "members": {
+                "id": "someID",
+                "title": "La fine équipe",
+                "subtitle": "Membres",
+                "members": ["John Doe", "Alice Evergreen", "Paul Mylo"],
+                "gmap": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d360.9634225216508!2d3.8437114840086686!3d43.63344900493854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1612545523839!5m2!1sfr!2sfr"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "creationAssociation": [
+    {
+      "article": {
+        "id": "creationAssociationArticle",
+        "title": "Créé ton assoc'",
+        "subtitle": "Associations",
+        "contents": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum.",
+          "Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique."
+        ],
+        "picture": "organigram.jpg",
+        "pictureFirst": true
+      }
+    },
+    {
+      "assets": {
+        "id": "creationAssociationAssets",
+        "data": [
+          "Tu peux t'associer à d'autres élèves",
+          "C'est gratuit",
+          "Tu peux toucher des subventions"
+        ],
+        "picture": "organigram.jpg"
+      }
+    }
+  ],
+  "evenements": [
+    {
+      "type": "Interne",
+      "emoji": "🏠",
+      "elements": [
+        {
+          "id": "blue",
+          "nom": "Blue",
+          "emoji": "🌊",
+          "lieu": "Montpellier",
+          "body": [
+            {
+              "article": {
+                "id": "blueArticle",
+                "title": "La Blue",
+                "subtitle": "Evenements à Montpellier",
+                "contents": [
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum.",
+                  "Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique."
+                ],
+                "picture": "organigram.jpg",
+                "pictureFirst": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "mms",
+          "nom": "m&m's",
+          "emoji": "🍭",
+          "lieu": "Marseille-Montpellier"
+        }
+      ]
+    },
+    {
+      "type": "Réseau",
+      "emoji": "🌐",
+      "elements": [
+        {
+          "id": "pink",
+          "nom": "Pink",
+          "emoji": "🎀",
+          "lieu": "Chambéry"
+        },
+        {
+          "id": "tigresses",
+          "nom": "Les tigresses",
+          "emoji": "🐯",
+          "lieu": "Clermont-Ferrand"
+        }
+      ]
+    }
+  ]
+}

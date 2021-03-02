@@ -1,7 +1,16 @@
 <template>
-  <div>ici</div>
+  <main class="background-gradient">
+    <Builder :components="components" />
+  </main>
 </template>
 
 <script>
-export default {};
+import website from '~/static/website.json';
+export default {
+  data() {
+    return {
+      components: website.creationAssociation,
+    };
+  },
+};
 </script>

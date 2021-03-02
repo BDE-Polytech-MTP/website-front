@@ -10,11 +10,11 @@
       <ul
         class="is-flex is-align-items-center is-flex-wrap-wrap is-justify-content-space-around"
       >
-        <li v-for="element in features" v-bind:key="element.titre">
+        <li v-for="element in features" v-bind:key="element.title">
           <Feature
             :emoji="element.emoji"
-            :title="element.titre"
-            :subtitle="element.description"
+            :title="element.title"
+            :subtitle="element.subtitle"
           />
         </li>
       </ul>

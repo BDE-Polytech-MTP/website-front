@@ -1,0 +1,29 @@
+{
+  "features": {
+    "id": "someID",
+    "title": "Le weekend parfait !",
+    "subtitle": "Aller c'est parti, suis nous le temps d'un weekend sur la cote Atlantique",
+    "data": [
+      {
+        "title": "Du beau temps",
+        "subtitle": "C'est promis il fera beau tout le weekend",
+        "emoji": "⛅"
+      },
+      {
+        "title": "Dans la nature",
+        "subtitle": "Tu ne sera pas déçu de l'emplacement",
+        "emoji": "🌿"
+      },
+      {
+        "title": "De la bière",
+        "subtitle": "Ce doux breuvage subtil sera distribué à volonté",
+        "emoji": "🍺"
+      },
+      {
+        "title": "Des vagues",
+        "subtitle": "T'es même pas prêt pour ces vagues de dingue !",
+        "emoji": "🌊"
+      }
+    ]
+  }
+}

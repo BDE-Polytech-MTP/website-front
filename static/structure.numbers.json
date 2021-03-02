@@ -1,0 +1,20 @@
+{
+  "numbers": {
+    "id": "someID",
+    "theme": "is-primary | is-success | is-danger | is-warning | is-link",
+    "data": [
+      {
+        "title": "Prix compétitif",
+        "value": "50€"
+      },
+      {
+        "title": "Etudiants",
+        "value": 561
+      },
+      {
+        "title": "Professeurs",
+        "value": 293
+      }
+    ]
+  }
+}

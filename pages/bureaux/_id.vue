@@ -1,46 +1,30 @@
 <template>
-  <main>
-    <Article
-      :title="bureau.nom"
-      subtitle="Bureaux"
-      :contents="[bureau.description]"
-      :startWithImage="bureau.nom.length % 2 == 0"
-      :picture="bureau.photo"
-    >
-    </Article>
-    <Numbers
-      :content="bureau.nombres"
-      :theme="bureau.theme"
-      v-if="bureau.nombres"
-    />
-    <ImageSection :src="bureau.organigramme" v-if="bureau.organigramme" />
+  <main class="background-gradient">
+    <Builder :components="components" />
   </main>
 </template>
 
 <script>
-import hydration from "~/static/data.json";
-
+import website from '~/static/website.json';
 export default {
-  name: "bureaux_id",
   validate({ params }) {
-    return (
-      (this.bureau = hydration.bureaux.elements.filter((elt) => {
-        return elt.id == params.id;
-      })[0]) != undefined
-    );
+    let res = false;
+    website.bureaux.forEach((bureau) => {
+      if (bureau.id == params.id) {
+        res = true;
+      }
+    });
+    return res;
   },
   data() {
     return {
-      bureau: null,
+      components: null,
     };
   },
   beforeMount() {
-    this.bureau = hydration.bureaux.elements.filter((elt) => {
-      return elt.id == this.$route.params.id;
-    })[0];
+    this.components = website.bureaux.filter((bureau) => {
+      return bureau.id == this.$route.params.id;
+    })[0].body;
   },
 };
 </script>
-
-<style lang="css">
-</style>

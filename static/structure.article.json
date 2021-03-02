@@ -1,0 +1,10 @@
+{
+  "article": {
+    "id": "someID",
+    "title": "Polytech Montpellier",
+    "subtitle": "Associations d'élèves",
+    "contents": ["Some content here", "Some other content here"],
+    "picture": "mock.jpg",
+    "pictureFirst": true
+  }
+}

@@ -131,37 +131,37 @@
   </section>
 </template>
 <script>
-import gql from "graphql-tag";
-import SpecialtyEdit from "~/components/SpecialtyEdit.vue";
+import gql from 'graphql-tag';
+import SpecialtyEdit from '~/components/SpecialtyEdit.vue';
 
 const State = {
   VERIFYING: {},
   NOT_A_BOOTSTRAP: {
-    verificationState: "is-danger",
+    verificationState: 'is-danger',
   },
   FILL_BDE_INFO: {
-    verificationState: "is-success",
+    verificationState: 'is-success',
   },
   FILL_ADMIN_INFO: {
-    verificationState: "is-success",
-    bdeInfoState: "is-success",
+    verificationState: 'is-success',
+    bdeInfoState: 'is-success',
   },
   SENDING: {
-    verificationState: "is-success",
-    bdeInfoState: "is-success",
+    verificationState: 'is-success',
+    bdeInfoState: 'is-success',
     pending: true,
   },
   FINISHED: {
-    verificationState: "is-success",
-    bdeInfoState: "is-success",
-    adminInfoState: "is-success",
-    finishState: "is-success",
+    verificationState: 'is-success',
+    bdeInfoState: 'is-success',
+    adminInfoState: 'is-success',
+    finishState: 'is-success',
   },
   ERRORED: {
-    verificationState: "is-success",
-    bdeInfoState: "is-success",
-    adminInfoState: "is-success",
-    finishState: "is-danger",
+    verificationState: 'is-success',
+    bdeInfoState: 'is-success',
+    adminInfoState: 'is-success',
+    finishState: 'is-danger',
   },
 };
 
@@ -176,34 +176,34 @@ const GET_ALL_BDE = gql`
 export default {
   data() {
     return {
-      activeStep: 0,
+      activeStep: 1,
       state: State.VERIFYING,
       specialties: [
         {
           index: 0,
-          fullName: "Classe préparatoire",
-          shortName: "PEIP",
+          fullName: 'Classe préparatoire',
+          shortName: 'PEIP',
           years: [1, 2],
         },
       ],
       specialtiesColumns: [
         {
-          field: "fullName",
-          label: "Nom complet",
+          field: 'fullName',
+          label: 'Nom complet',
         },
         {
-          field: "shortName",
-          label: "Acronyme",
+          field: 'shortName',
+          label: 'Acronyme',
         },
         {
-          field: "years",
-          label: "Années",
+          field: 'years',
+          label: 'Années',
         },
       ],
       selectedSpecialty: null,
       bdeName: {
         valid: false,
-        value: "",
+        value: '',
       },
       admin: null,
     };
@@ -237,10 +237,10 @@ export default {
         .catch(() => {
           this.state = State.NOT_A_BOOTSTRAP; // Maybe handle it differently ?
           this.$buefy.snackbar.open({
-            type: "is-danger",
-            message: "Impossible de vérifier si un BDE existe déjà.",
-            actionText: "Ré-essayer",
-            position: "is-top",
+            type: 'is-danger',
+            message: 'Impossible de vérifier si un BDE existe déjà.',
+            actionText: 'Ré-essayer',
+            position: 'is-top',
             duration: 3500,
             onAction: () => this.checkIsBootstrap(),
           });
@@ -333,8 +333,8 @@ export default {
         })
         .catch(() => {
           this.$buefy.toast.open({
-            message: "Impossible de créer le BDE",
-            type: "is-danger",
+            message: 'Impossible de créer le BDE',
+            type: 'is-danger',
           });
           this.state = State.ERRORED;
         });

@@ -8,8 +8,8 @@
           v-bind:key="`numbers-${index}`"
         >
           <div>
-            <p class="title">{{ elt.valeur }}</p>
-            <p class="heading">{{ elt.titre }}</p>
+            <p class="title">{{ elt.value }}</p>
+            <p class="heading">{{ elt.title }}</p>
           </div>
         </div>
       </div>
@@ -19,10 +19,10 @@
 
 <script>
 export default {
-  name: "Numbers",
+  name: 'Numbers',
   props: {
     content: { type: Array, required: true },
-    theme: { type: String, required: false, default: "is-primary" },
+    theme: { type: String, required: false, default: 'is-primary' },
   },
 };
 </script>

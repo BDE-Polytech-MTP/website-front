@@ -1,28 +1,23 @@
 <template>
-  <div>
-    <section class="container" v-if="evenement">
-      <h1>{{ evenement }}</h1>
-    </section>
-  </div>
+  <main class="background-gradient">
+    <Builder :components="components" />
+  </main>
 </template>
 
 <script>
-import hydration from "~/static/data.json";
+import website from '~/static/website.json';
 
 export default {
   data() {
     return {
-      evenement: null,
-      group: null,
+      components: null,
     };
   },
   beforeMount() {
-    hydration.evenements.elements.forEach((type) => {
+    website.evenements.forEach((type) => {
       type.elements.forEach((elt) => {
         if (elt.id == this.$route.params.id) {
-          this.evenement = elt;
-          this.group = { type: type.type, emoji: type.emoji };
-          console.log(this.group);
+          this.components = elt.body;
         }
       });
     });

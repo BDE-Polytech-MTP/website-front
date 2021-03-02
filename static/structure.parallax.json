@@ -1,0 +1,12 @@
+{
+  "parallax": {
+    "id": "someID",
+    "size": "small | medium | fullscreen",
+    "active": true,
+    "speed": 0.1,
+    "picture": "header.jpg",
+    "title": "Montpellier",
+    "topPercentage": 10,
+    "scrollTo": "componentID"
+  }
+}
