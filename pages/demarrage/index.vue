@@ -176,7 +176,7 @@ const GET_ALL_BDE = gql`
 export default {
   data() {
     return {
-      activeStep: 1,
+      activeStep: 0,
       state: State.VERIFYING,
       specialties: [
         {
