@@ -39,6 +39,7 @@
         <b-button label="Retour" @click="$emit('close')" />
         <b-button
           label="Se connecter"
+          value="Se connecter"
           type="is-primary"
           tag="input"
           native-type="submit"
