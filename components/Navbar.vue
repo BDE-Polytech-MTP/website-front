@@ -297,6 +297,7 @@ export default {
     },
     handleLogout() {
       this.$auth.logout().then(() => {
+        this.hdr = `${this.hdr}`; // Workaround to trigger a refresh of the view
         this.$buefy.toast.open({
           message: 'Tu es maintenant déconnecté 🌙',
           type: 'is-warning',
