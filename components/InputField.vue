@@ -31,6 +31,7 @@
       :autocapitalize="autocapitalize"
       :expanded="expanded"
       :password-reveal="passwordReveal"
+      :disabled="disabled"
     />
     <p class="control" v-if="addons">
       <b-button class="button is-static">{{ addons }}</b-button>
@@ -61,6 +62,7 @@ export default {
     timeout: { type: Number, required: false, default: 300 },
     addons: { type: String, required: false },
     value: { required: false },
+    disabled: { required: false, default: false },
   },
   data() {
     const startValue = this.value || "";

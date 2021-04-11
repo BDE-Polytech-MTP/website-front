@@ -198,7 +198,7 @@
           @click="toggle('burger')"
         >
           <NuxtLink to="/compte">
-            <p style="color: #4a4a4a">Compte</p>
+            <p style="color: #4a4a4a">Mon compte</p>
           </NuxtLink>
         </div>
       </div>
