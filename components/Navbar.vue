@@ -4,7 +4,7 @@
       <NuxtLink to="/">
         <img
           style="height: 4rem; padding: 0.3rem"
-          src="~assets/img/logo-2.png"
+          src="~assets/img/logo.png"
           alt="Logo étudiants de Polytech Montpellier"
         />
       </NuxtLink>
