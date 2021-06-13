@@ -87,7 +87,7 @@
 <script>
 export default {
   props: {
-    components: { type: Array, required: true, default: () => new Array() },
+    components: { type: Array, required: true, default: () => [] },
   },
   methods: {
     typeOf(component) {
