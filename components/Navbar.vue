@@ -192,7 +192,7 @@
           </div>
         </div>
         <NuxtLink
-          :to="'/team/'"
+          :to="'/equipe/'"
           class="navbar-item"
         >
           <div class="navbar-item is-hoverable is-arrowless">
