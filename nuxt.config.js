@@ -1,10 +1,10 @@
 function getApiURL() {
-  return process.env.API_URL || "http://localhost:3001/";
+  return process.env.API_URL || 'http://localhost:3001/';
 }
 
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
-  target: "static",
+  target: 'static',
 
   env: {
     API_URL: getApiURL(),
@@ -13,17 +13,17 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: "Etudiants Polytech Montpellier",
+    title: 'Etudiants Polytech Montpellier',
     meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/fav.ico" }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/fav.ico' }],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ["~assets/style/main.css", "~assets/style/overlay.scss"],
+  css: ['~assets/style/main.css', '~assets/style/overlay.scss'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [],
@@ -37,13 +37,13 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/buefy
-    ["nuxt-buefy", { css: false }],
+    ['nuxt-buefy', { css: false }],
     // https://go.nuxtjs.dev/axios
-    "@nuxtjs/axios",
+    '@nuxtjs/axios',
     // https://auth.nuxtjs.org
-    "@nuxtjs/auth-next",
+    '@nuxtjs/auth-next',
     // https://github.com/nuxt-community/apollo-module
-    "@nuxtjs/apollo",
+    '@nuxtjs/apollo',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -54,8 +54,8 @@ export default {
 
   apollo: {
     clientConfigs: {
-      default: "~/plugins/auth-linker.js"
-    }
+      default: '~/plugins/auth-linker.js',
+    },
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
@@ -63,33 +63,36 @@ export default {
 
   auth: {
     redirect: {
-      login: "/authentification",
-      logout: "/",
-      callback: "/",
-      home: "/"
+      login: '/authentification',
+      logout: '/',
+      callback: '/',
+      home: '/',
     },
     strategies: {
       local: {
         scheme: 'refresh',
         token: {
-          property: 'access_token'
+          property: 'access_token',
         },
         refreshToken: {
-          property: 'refresh_token'
+          property: 'refresh_token',
         },
         endpoints: {
           login: { url: '/oauth/token', method: 'post' },
           refresh: { url: '/oauth/token', method: 'post' },
-          user: { url: '/graphql?query=query{me{firstname,lastname,specialty{shortName,year},bde{id,name}}}' },
-          logout: false
+          user: {
+            url:
+              '/graphql?query=query{me{firstname,lastname,specialty{shortName,year},bde{id,name}}}',
+          },
+          logout: false,
         },
         user: {
-          property: "data.me"
+          property: 'data.me',
         },
-        tokenType: "bearer",
+        tokenType: 'bearer',
         grantType: 'password',
-        scope: []
+        scope: [],
       },
-    }
-  }
+    },
+  },
 };
