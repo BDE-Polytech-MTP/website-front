@@ -33,7 +33,7 @@
                     <div class="level-item">
                       <p>
                         <strong
-                          >{{ bureau.emoji }}
+                        >{{ bureau.emoji }}
                           {{ capitalize(bureau.nom) }}</strong
                         >
                         <br />
@@ -191,6 +191,7 @@
             </div>
           </div>
         </div>
+
         <NuxtLink
           :to="'/equipe/'"
           class="navbar-item"
@@ -205,7 +206,6 @@
             </div>
           </div>
         </NuxtLink>
-
 
         <div
           class="navbar-item"
@@ -247,9 +247,28 @@
           >
             Connexion
           </b-button>
+
+          <b-button
+            type="is-light"
+            @click ="isSignInModalActive = true"
+          >
+            Inscription
+          </b-button>
+
         </div>
       </div>
     </div>
+
+    <b-modal
+      v-model="isSignInModalActive"
+      :can-cancel="[false, false, false]"
+      aria-role="dialog"
+      has-modal-card
+    >
+      <div>
+        <SignIn @close="isSignInModalActive = false" @signin="handleSignIn()" />
+      </div>
+    </b-modal>
 
     <b-modal
       v-model="isLoginModalActive"
@@ -267,9 +286,11 @@
 <script>
 import website from '~/static/website.json';
 import social from '~/static/social-networks.json';
+import SignIn from '~/components/SignIn';
 
 export default {
   name: 'Navbar',
+  components: { SignIn },
   data() {
     return {
       hdr: website,
@@ -281,6 +302,7 @@ export default {
         associations: '',
       },
       isLoginModalActive: false,
+      isSignInModalActive: false,
     };
   },
   methods: {
@@ -307,6 +329,13 @@ export default {
       this.isLoginModalActive = false;
       this.$buefy.toast.open({
         message: 'Tu es maintenant connecté ✅',
+        type: 'is-success',
+      });
+    },
+    handleSignIn(){
+      this.isSignInModalActive = false;
+      this.$buefy.toast.open({
+        message: 'Ton compte est maintenant en attente de validation 🛡️',
         type: 'is-success',
       });
     },
