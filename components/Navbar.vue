@@ -1,7 +1,10 @@
 <template>
   <nav class="navbar is-fixed-top">
     <div class="navbar-brand">
-      <NuxtLink to="/">
+      <NuxtLink
+        to="/"
+        @click="toggle('burger')"
+      >
         <img
           style="height: 4rem; padding: 0.3rem"
           src="~assets/img/logo.png"
@@ -196,26 +199,30 @@
           :to="'/equipe/'"
           class="navbar-item"
         >
-          <div class="navbar-item is-hoverable is-arrowless">
+          <div
+            class="navbar-item is-hoverable is-arrowless is-mega"
+            @click="toggle('burger')"
+          >
             <p class="navbar-link flex is-arrowless">
               L'équipe
             </p>
-            <div
-              id="members"
-            >
-            </div>
           </div>
         </NuxtLink>
 
-        <div
+        <NuxtLink
+          :to="'/compte/'"
           class="navbar-item"
           v-if="$auth.loggedIn"
-          @click="toggle('burger')"
         >
-          <NuxtLink to="/compte">
-            <p style="color: #4a4a4a">Mon compte</p>
-          </NuxtLink>
-        </div>
+          <div
+            class="navbar-item is-hoverable is-arrowless is-mega"
+            @click="toggle('burger')"
+            >
+            <p class="navbar-link flex is-arrowless">
+              Mon compte
+            </p>
+          </div>
+        </NuxtLink>
       </div>
 
       <div class="navbar-end mr-4">
@@ -250,6 +257,7 @@
 
           <b-button
             type="is-light"
+            v-if='!$auth.loggedIn'
             @click ="isSignInModalActive = true"
           >
             Inscription
