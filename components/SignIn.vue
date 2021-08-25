@@ -146,7 +146,7 @@ export default {
             this.$emit('signin');
           })
           .catch((e) => {
-            console.log(e);
+            console.error(e);
             this.$buefy.toast.open({
               message: 'Une erreur est survenue ici',
               type: 'is-danger',

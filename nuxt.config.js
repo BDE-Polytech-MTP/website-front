@@ -82,7 +82,7 @@ export default {
           refresh: { url: '/oauth/token', method: 'post' },
           user: {
             url:
-              '/graphql?query=query{me{firstname,lastname,specialty{shortName,year},bde{id,name}}}',
+              '/graphql?query=query{me{firstname,lastname,roles,specialty{shortName,year},bde{id,name}}}',
           },
           logout: false,
         },

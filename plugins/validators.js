@@ -11,7 +11,7 @@ function passwordValidation(input) {
     return (
       input.length > 7 &&
       input.match(/.*[0-9]+.*/) &&
-      input.match(/.*[!,.:;%<>&#$\/\*?\\]+.*/)
+      input.match(/.*[!,.:;%<>&#$\/*?\\]+.*/)
     );
   } else {
     return false;
