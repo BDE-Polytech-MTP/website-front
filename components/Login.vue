@@ -110,7 +110,7 @@ export default {
           })
           .catch(() => {
             this.$buefy.toast.open({
-              message: 'Impossible de se connecter au serveur ❌',
+              message: 'Adresse mail ou mot de passe incorrect ❌',
               type: 'is-danger',
             });
           })
