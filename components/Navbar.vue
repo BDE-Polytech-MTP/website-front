@@ -223,6 +223,22 @@
             </p>
           </div>
         </NuxtLink>
+
+        <NuxtLink
+          :to="'/validationMembres/'"
+          class="navbar-item"
+          v-if="$auth.loggedIn && $auth.user.roles.length !== 0"
+        >
+        <!-- if the user is logged in and its an admin -->
+          <div
+            class="navbar-item is-hoverable is-arrowless is-mega"
+            @click="toggle('burger')"
+          >
+            <p class="navbar-link flex is-arrowless">
+              Validation membres
+            </p>
+          </div>
+        </NuxtLink>
       </div>
 
       <div class="navbar-end mr-4">
