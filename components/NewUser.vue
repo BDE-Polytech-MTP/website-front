@@ -30,7 +30,6 @@ export default {
   },
   methods: {
     accept () {
-      console.log(this.mail);
       if (confirm("Vous êtes sur le point de valider " + this.firstName + " " + this.lastName + "\n Voulez-vous confirmer ?")) {
         let apolloReturn = this.$apollo.mutate({
           mutation: gql`mutation ($mail: String!) {
@@ -49,7 +48,6 @@ export default {
       }
     },
     decline () {
-      console.log(this.mail);
       if (confirm("Vous êtes sur le point de refuser la demande de " + this.firstName + " " + this.lastName + "\n Voulez-vous confirmer ?")) {
         let apolloReturn = this.$apollo.mutate({
           mutation: gql`mutation ($mail: String!) {

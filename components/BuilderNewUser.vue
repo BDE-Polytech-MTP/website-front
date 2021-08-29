@@ -19,7 +19,7 @@
     <tbody>
     <NewUser
       v-for="(user, index) in allUsers"
-      v-bind:key="`members-${index}`"
+      :key="user.id"
       :id = "user.id"
       :firstName = "user.firstname"
       :lastName = "user.lastname"
@@ -39,7 +39,7 @@ export default {
   apollo: {
     allUsers: gql`{
       allUsers {
-        firstname,lastname,roles,email
+        firstname,lastname,email
       }
     }`,
   },
@@ -49,21 +49,6 @@ export default {
       allUsers: {}
     }
   },
-
-  methods: {
-    async update() {
-      console.log("update");
-      console.log(this.allUsers);
-      this.$apollo.query(
-        gql`{
-          allUsers {
-            firstname,lastname,roles,email
-          }
-        }`
-      ).then(r => this.allUsers = r);
-      console.log(this.allUsers);
-    }
-  }
 };
 </script>
 

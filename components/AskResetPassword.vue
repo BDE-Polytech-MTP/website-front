@@ -75,7 +75,7 @@ export default {
           })
           .catch(() => {
             this.$buefy.toast.open({
-              message: "Une erreur est survenue, votre compte n'a pas été validé ❌",
+              message: "Impossible de se connecter au serveur ❌",
               type: "is-danger",
             });
             this.$emit("close");
