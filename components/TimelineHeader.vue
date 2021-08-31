@@ -26,7 +26,6 @@ export default {
         return ["small", "medium", "large"].indexOf(value) !== -1
       }
     }
-
   }
 };
 </script>
