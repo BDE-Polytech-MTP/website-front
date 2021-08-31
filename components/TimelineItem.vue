@@ -5,6 +5,7 @@
             marker_type == undefined ? 'is-primary' : `is-${marker_type}`,
             icon != undefined ? 'is-icon' : '',
         ]">
+
             <img v-if="image != undefined" :src="require(`~/assets/img/${image}`)">
             <b-icon v-if="icon != undefined"
                 :icon="icon"
@@ -27,13 +28,13 @@ export default {
     dateFormat: { type: Object, required: false },
     image: { type: String, required: false },
     icon: { type: String, required: false },
-    marker_type: { type: String, required: false, 
+    marker_type: { type: String, required: false,
       validator: function (value) {
         // La valeur passée doit être l'une de ces chaines de caractères
         return ["primary", "info", "success", "warning", "danger", "link"].indexOf(value) !== -1
       }
     },
-    item_type: { type: String, required: false, 
+    item_type: { type: String, required: false,
       validator: function (value) {
         // La valeur passée doit être l'une de ces chaines de caractères
         return ["primary", "info", "success", "warning", "danger", "link"].indexOf(value) !== -1
