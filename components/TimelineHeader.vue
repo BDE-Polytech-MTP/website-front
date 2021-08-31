@@ -25,10 +25,6 @@ export default {
         return ["small", "medium", "large"].indexOf(value) !== -1
       }
     }
-  },
-  computed: {
-    dateOptions: function(){return this.options ? this.options : {year: 'numeric', month: 'long', day: 'numeric'}},
-    dateConverted: function(){return new Date(this.date)}
   }
 };
 </script>
