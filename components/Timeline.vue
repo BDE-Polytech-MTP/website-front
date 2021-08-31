@@ -70,7 +70,6 @@ export default {
         }
 
         return (new Date(a.date) > new Date(b.date)) ? 1 : -1
-
       })
     }
   }
