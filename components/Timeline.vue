@@ -13,17 +13,17 @@
                     <TimelineHeader
                     v-if="typeOf(item) == 'timelineheader'"
                     :title="item.timelineheader.title"
-                    :options="item.timelineheader.options"
                     :date="item.timelineheader.date"
+                    :dateFormat="item.timelineheader.dateFormat"
                     :type="item.timelineheader.type"
-                    :size="index != 0 && index != items.length-1 ? 'small' : 'medium'"
+                    :size="'small'"
                     />
 
                     <TimelineItem
                     v-else
                     :title="item.timelineitem.title"
                     :date="item.timelineitem.date"
-                    :options="item.timelineitem.options"
+                    :dateFormat="item.timelineitem.dateFormat"
                     :image="item.timelineitem.image"
                     :icon="item.timelineitem.icon"
                     :marker_type="item.timelineitem.marker_type"

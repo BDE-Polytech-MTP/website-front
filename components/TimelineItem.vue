@@ -13,7 +13,7 @@
         </div>
 
         <div class="timeline-content">
-            <p class="heading">{{ dateConverted.toLocaleString('fr-FR', dateOptions) }}</p>
+            <p class="heading">{{ new Date(this.date).toLocaleString('fr-FR', options) }}</p>
             <p>{{ title }}</p>
         </div>
     </div>
@@ -24,7 +24,7 @@ export default {
   props: {
     title: { type: String, required: true },
     date: { type: String, required: true },
-    options: { type: Object, required: false },
+    dateFormat: { type: Object, required: false },
     image: { type: String, required: false },
     icon: { type: String, required: false },
     marker_type: { type: String, required: false, 
@@ -41,8 +41,7 @@ export default {
     },
   },
   computed: {
-    dateOptions: function(){return this.options ? this.options : {year: 'numeric', month: 'long', day: 'numeric'}},
-    dateConverted: function(){return new Date(this.date)}
+    options: function(){return this.dateFormat ? this.dateFormat : {year: 'numeric', month: 'long', day: 'numeric'}},
   }
 };
 </script>
