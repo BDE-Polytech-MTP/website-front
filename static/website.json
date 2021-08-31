@@ -1,5 +1,44 @@
 {
-  "main": [
+  "main": [{
+    "timeline": {
+        "items": [
+            {
+                "timelineitem": {
+                "date": "2011-10-05T14:48:00.000Z",
+                "title": "Intégration des nouveaux",
+                "image": "/_nuxt/assets/img/logo.png",
+                "marker_type": "white"
+                }
+            },
+            {
+                "timelineheader": {
+                "date": "2011-10-05T15:48:00.000Z",
+                "title": "Titre"
+                }
+            },
+            {
+                "timelineitem": {
+                "title": "2018",
+                "date": "2018-10-05T13:48:00.000Z",
+                "dateFormat": {"year": "numeric", "month": "numeric", "day": "numeric", "hour": "numeric","minute": "numeric","second": "numeric"},
+                "type": "info"
+                }
+            },
+            {
+                "timelineitem": {
+                "date": "2011-10-04T14:48:00.000Z",
+                "title": "Machin bidule"
+                }
+            },
+            {
+                "timelineitem": {
+                "date": "2011-10-04T13:48:00.000Z",
+                "title": "Machin bidule avant"
+                }
+            }
+        ]
+    }
+},
     {
       "parallax": {
         "id": "mainParallax",
