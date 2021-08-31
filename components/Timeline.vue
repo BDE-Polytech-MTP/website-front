@@ -58,7 +58,7 @@ export default {
       return this.items.sort((a, b) => {
         if(a.timelineitem){a = a.timelineitem}else {a = a.timelineheader}
         if(b.timelineitem){b = b.timelineitem}else {b = b.timelineheader}
-        return (a.date > b.date) ? 1 : -1
+        return (new Date(a.date) > new Date(b.date)) ? 1 : -1
       })
     }
   }
