@@ -34,6 +34,15 @@
           :picture="component.article.picture"
         />
       </div>
+      
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'timeline'"
+      >
+        <Timeline
+          :items="component.timeline.items"
+        />
+      </div>
 
       <div
         class="background-gradient-lines"
