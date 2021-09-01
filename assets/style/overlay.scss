@@ -3,6 +3,7 @@ $primary-light: findLightColor($primary);
 
 // Import bulma styles
 @import "~bulma";
+@import '~bulma-timeline';
 
 // Import buefy styles
 @import "~buefy/src/scss/buefy";
