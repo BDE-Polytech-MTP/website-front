@@ -158,22 +158,120 @@
       "president": "Donald Trump",
       "body": [
         {
-          "article": {
-            "id": "bdsArticle",
-            "title": "Bureau des sports",
-            "subtitle": "Bureaux",
-            "contents": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum.",
-              "Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique."
-            ],
-            "picture": "organigram.jpg",
-            "pictureFirst": true
+        "article": {
+          "title": "Bienvenue au BDS",
+          "subtitle": "Bureau Des Sports",
+          "picture": "bds/sports.jpg",
+          "startWithImage": false,
+          "contents": ["Cette page vous permettra de suivre nos actualités ainsi que les différents clubs et évènements que nous proposerons !"]
+        }
+      },
+        {
+          "description": {
+            "quote": "Une période d’essai gratuite est mise en place en début d’année pour une durée d’un mois (dates communiquées ultérieurement). Ensuite pour accéder aux activitées du BDS, l’adhésion est nécessaire (….$). Cette adhésion permet aussi l’accès à des tarifs préférentiels pour les goodies du BDS (et évènements éventuels), à tous les partenariats proposés par le BDS … "
           }
         },
         {
-          "picture": {
-            "id": "bde-organigram",
-            "picture": "organigram.jpg"
+          "clubs": {
+            "color": "rgb(0,156,221)",
+            "clubs": [
+              {
+                "id": "club1",
+                "image": "/_nuxt/assets/img/bds/athletisme.jpg",
+                "title": "Athlétisme",
+                "directedBy": "Pierre VERMUSE (MI)",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club2",
+                "image": "/_nuxt/assets/img//bds/badminton.jpg",
+                "title": "Badminton",
+                "directedBy": "Jodie COTTAVE (IG) et Lou VIVENOT",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club3",
+                "image": "/_nuxt/assets/img/bds/basket.jpg",
+                "title": "Basket",
+                "directedBy": "Hugo Ménart (MI) et Anthony ROYON (MAT)",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club4",
+                "image": "/_nuxt/assets/img/bds/boxe.jpg",
+                "title": "Boxe",
+                "directedBy": "Théo BOISSERIE (MI)",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club5",
+                "image": "/_nuxt/assets/img/bds/running.jpg",
+                "title": "Course à pied",
+                "directedBy": "Louise MONMUSSON (GBA) et Manon LASSUS (GBA)",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club6",
+                "image": "/_nuxt/assets/img/bds/escalade.jpg",
+                "title": "Escalade",
+                "directedBy": "Antton ETCHEVERRIA et Juliette BRETAUD (STE)",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club7",
+                "image": "/_nuxt/assets/img/bds/foot.jpg",
+                "title": "Foot",
+                "directedBy": "Louis JALLIER (MI) et Mazen DEBS (MAT)",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club8",
+                "image": "/_nuxt/assets/img/bds/hand.jpg",
+                "title": "Hand",
+                "directedBy": "Timothé DELABY (GBA), Anna LEMOINE (GBA) et Thomas LENFAN (MAT)",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club9",
+                "image": "/_nuxt/assets/img/bds/pompom.jpg",
+                "title": "Pompom",
+                "directedBy": "Jodie COTTAVE (IG) et Elisa VALDERRAMA",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club10",
+                "image": "/_nuxt/assets/img/bds/rugby.jpg",
+                "title": "Rugby",
+                "directedBy": "Léo FLAQUET (MI) et Célia DULERME (GBA)",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club11",
+                "image": "/_nuxt/assets/img/bds/tennis.jpg",
+                "title": "Tennis",
+                "directedBy": "Lucie MARQUES (GBA) et Titouan (GBA)",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club12",
+                "image": "/_nuxt/assets/img/bds/volley.jpg",
+                "title": "Volley",
+                "directedBy": "Fabien LACAZE (STE) et Pierre ORTHOLAND (MAT)",
+                "hour": "-",
+                "location": "-"
+              }
+            ]
           }
         }
       ]
