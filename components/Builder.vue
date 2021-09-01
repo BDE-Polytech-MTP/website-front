@@ -105,6 +105,23 @@
           :features="component.features.data"
         />
       </div>
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'clubs'"
+      >
+        <Clubs
+          :clubs="component.clubs.clubs"
+          :color="component.clubs.color"
+        />
+      </div>
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'description'"
+      >
+        <Description
+          :quote="component.description.quote"
+        />
+      </div>
       <p v-else>-</p>
     </div>
   </div>
