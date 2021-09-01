@@ -39,6 +39,7 @@
         v-else-if="typeOf(component) == 'carousel'"
       >
         <Carousel
+        :carousels="component.carousel.carousels"
         />
       </div>
 
