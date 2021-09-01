@@ -5,7 +5,6 @@
             marker_type == undefined ? 'is-primary' : `is-${marker_type}`,
             icon != undefined ? 'is-icon' : '',
         ]">
-
             <img v-if="image != undefined" :src="require(`~/assets/img/${image}`)">
             <b-icon v-if="icon != undefined"
                 :icon="icon"
