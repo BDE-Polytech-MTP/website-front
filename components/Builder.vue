@@ -33,6 +33,14 @@
           :items="component.timeline.items"
         />
       </div>
+      
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'carousel'"
+      >
+        <Carousel
+        />
+      </div>
 
       <Assets
         v-else-if="typeOf(component) == 'assets'"
