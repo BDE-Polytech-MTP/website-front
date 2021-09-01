@@ -1,0 +1,16 @@
+{
+    "carousel": {
+        "carousels":[
+        {
+            "title": "Slide 1",
+            "content": "Coucou",
+            "picture": "https://picsum.photos/200"
+        },
+        {
+            "title": "Slide 2",
+            "content": "Aurevoir",
+            "picture": "https://picsum.photos/500"
+        }
+        ]
+    }
+}
