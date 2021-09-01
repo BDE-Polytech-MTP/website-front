@@ -42,11 +42,16 @@ function lastnameValidation(input) {
   return input && input.length > 0 && input.length <= 40;
 }
 
+function eventNameValidation(input) {
+  return input && input.length > 0 && input.length <= 20;
+}
+
 export {
   mailValidation,
   passwordValidation,
   textValidation,
   integerValidation,
   firstnameValidation,
-  lastnameValidation
+  lastnameValidation,
+  eventNameValidation,
 };

@@ -1,12 +1,7 @@
 <template>
-  <b-field
-    class="form-field"
-    :id="id"
-    :type="getClassType"
-    :message="getMessage"
-  >
+  <b-field :id="id" :type="getClassType" :message="getMessage">
     <template #label>
-      <div class="is-fullwidth is-flex is-justify-content-space-between">
+      <div v-if="label" class="is-fullwidth is-flex is-justify-content-space-between">
         <p>{{ label }}</p>
         <b-tag
           v-if="required && debouncedFieldInput == ''"
@@ -19,6 +14,7 @@
       </div>
     </template>
     <b-input
+      @click.native="$emit('clickInput', $event)"
       v-model="fieldInput"
       v-bind="field"
       :icon="icon"
@@ -40,7 +36,7 @@
 </template>
 <script>
 export default {
-  name: "InputField",
+  name: 'InputField',
   inheritAttrs: false,
   props: {
     id: { type: String, required: true },
@@ -65,14 +61,16 @@ export default {
     disabled: { required: false, default: false },
   },
   data() {
-    const startValue = this.value || "";
-    const formatValid = this.validator ? this.validator.call(null, startValue) : true;
+    const startValue = this.value || '';
+    const formatValid = this.validator
+      ? this.validator.call(null, startValue)
+      : true;
     return {
       debouncedFieldInput: startValue,
       d_timeout: undefined,
       field: {
         loading: false,
-        valid: formatValid && (!this.required || startValue ),
+        valid: formatValid && (!this.required || startValue),
       },
     };
   },
@@ -91,17 +89,17 @@ export default {
       },
     },
     getMessage() {
-      if (this.field.valid || this.debouncedFieldInput == "") {
-        return "";
+      if (this.field.valid || this.debouncedFieldInput == '') {
+        return '';
       } else {
         return this.message;
       }
     },
     getClassType() {
-      if (this.field.valid || this.debouncedFieldInput == "") {
-        return "";
+      if (this.field.valid || this.debouncedFieldInput == '') {
+        return '';
       } else {
-        return "is-danger";
+        return 'is-danger';
       }
     },
   },
@@ -111,15 +109,9 @@ export default {
         ? (this.field.valid = this.validator.call(null, val))
         : (this.field.valid = true);
       this.field.valid
-        ? this.$emit("update", true, val)
-        : this.$emit("update", false, val);
+        ? this.$emit('update', true, val)
+        : this.$emit('update', false, val);
     },
   },
 };
 </script>
-
-<style lang="css" scoped>
-.form-field {
-  height: 6rem;
-}
-</style>
