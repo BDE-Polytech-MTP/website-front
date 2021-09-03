@@ -24,7 +24,7 @@
           :picture="component.article.picture"
         />
       </div>
-      
+
       <div
         class="background-gradient-lines"
         v-else-if="typeOf(component) == 'timeline'"
@@ -33,7 +33,7 @@
           :items="component.timeline.items"
         />
       </div>
-      
+
       <div
         class="background-gradient-lines"
         v-else-if="typeOf(component) == 'carousel'"
@@ -97,6 +97,7 @@
           :features="component.features.data"
         />
       </div>
+
       <div
         class="background-gradient-lines"
         v-else-if="typeOf(component) == 'clubs'"
@@ -106,21 +107,38 @@
           :color="component.clubs.color"
         />
       </div>
+
       <div
         class="background-gradient-lines"
         v-else-if="typeOf(component) == 'description'"
       >
         <Description
-          :quote="component.description.quote"
+          :quotes="component.description.quotes"
         />
       </div>
+
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'social'"
+      >
+        <Social
+          :facebook="component.social.facebook"
+          :instagram="component.social.instagram"
+          :snapchat="component.social.snapchat"
+          :tiktok="component.social.tiktok"
+          :mail="component.social.mail"
+        />
+      </div>
+
       <p v-else>-</p>
     </div>
   </div>
 </template>
 
 <script>
+import SocialNetworks from '~/components/Social';
 export default {
+  components: { SocialNetworks },
   props: {
     components: { type: Array, required: true, default: () => new Array() },
   },

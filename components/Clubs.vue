@@ -43,13 +43,12 @@ export default {
 <style lang="css" scoped>
 
 .section {
-  padding-top:60px;
-  padding-bottom: 60px;
+  padding-top:0px;
+  padding-bottom: 0px;
 }
 
 p {
   color:white;
-  border: 1px solid rgb(0,156,221);
   border-radius: 4px;
 }
 </style>
