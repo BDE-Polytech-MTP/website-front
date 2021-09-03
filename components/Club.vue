@@ -59,6 +59,7 @@ export default {
   -o-transition: transform 0.1s ease-in-out;
   -moz-transition: transform 0.1s ease-in-out;
   -webkit-transition: transform 0.1s ease-in-out;
+  box-shadow: 0 0 40px grey;
 }
 h5 {
   color:white;
@@ -69,6 +70,7 @@ h5 {
 }
 .card {
   border:1px solid;
+
 }
 .five-lines-max {
   overflow: hidden;
