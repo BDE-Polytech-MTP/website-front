@@ -10,6 +10,7 @@
             :picture="membre.picture"
             :poste="membre.poste"
             :url="membre.url"
+            :description="membre.description"
           />
         </div>
       </div>
@@ -19,18 +20,11 @@
 </template>
 
 <script>
-import CardOrganigramme from "~/components/CardTrombinoscope";
+
 export default {
-  name: "Trombinoscope",
   props:{
     title:{type:String,required: false},
     membres:{type:Array ,required:true }
   }
-
 };
 </script>
-
-<style scoped>
-
-
-</style>

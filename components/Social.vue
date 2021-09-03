@@ -1,5 +1,6 @@
 <template>
   <section class="container">
+    <p class="follow">SUIVEZ-NOUS</p>
     <div class="buttons is-centered">
       <b-button
         icon-left="facebook"
@@ -48,14 +49,11 @@ export default {
 
 <style>
 
-.buttons {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top:20px;
-}
-
-p {
+.follow {
   text-align: center;
+  font-family: "Georgia Pro";
+  font-size: 30px;
+  font-weight: bold;
 }
 
 </style>

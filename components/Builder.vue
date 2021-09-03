@@ -12,13 +12,6 @@
         :scrollTo="component.parallax.scrollTo"
       />
 
-      <Trombinoscope
-        v-else-if="typeOf(component) =='trombinoscope'"
-        :id="component.trombinoscope.id"
-        :title="component.trombinoscope.title"
-        :membres="component.trombinoscope.membres"
-        />
-
       <div
         class="background-gradient-lines"
         v-else-if="typeOf(component) == 'article'"
@@ -48,15 +41,6 @@
       >
         <Carousel
         :carousels="component.carousel.carousels"
-        />
-      </div>
-
-      <div
-        class="background-gradient-lines"
-        v-else-if="typeOf(component) == 'timeline'"
-      >
-        <Timeline
-          :items="component.timeline.items"
         />
       </div>
 
@@ -156,6 +140,16 @@
         />
       </div>
 
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'trombinoscope'"
+      >
+        <Trombinoscope
+          :title="component.trombinoscope.title"
+          :membres="component.trombinoscope.membres"
+        />
+      </div>
+
       <p v-else>-</p>
     </div>
   </div>
@@ -164,8 +158,9 @@
 <script>
 
 import SocialNetworks from '~/components/Social';
+import Trombinoscope from '~/components/Trombinoscope';
 export default {
-  components: { SocialNetworks },
+  components: { Trombinoscope, SocialNetworks },
   props: {
     components: { type: Array, required: true, default: () => [] },
   },
