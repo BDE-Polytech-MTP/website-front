@@ -1,9 +1,9 @@
 <template>
-  <div class="card feature-card" >
-    <div class="card-header" :style="cardStyle">
+  <div class="card feature-card" :style="cardStyle2" >
+    <div class="card-header" :style="cardStyle1" >
       <h5 class="card-header-title is-centered ">{{ title }}</h5>
     </div>
-    <div class="card-content">
+    <div class="card-content" :style="cardStyle2">
       <div class="media">
         <div class="media-left">
           <figure class="image is-128x128">
@@ -16,7 +16,7 @@
         </div>
       </div>
     </div>
-    <div class="card-footer has-text-centered">
+    <div class="card-footer has-text-centered" :style="cardStyle2">
       <p class="card-footer-item"> Heure: {{ hour }}<br>Lieu: {{ location }}</p>
     </div>
 
@@ -34,9 +34,14 @@ export default {
     color: {type: String, default: "rgb(0,156,221)" }
   },
   computed: {
-    cardStyle() {
+    cardStyle1() {
       return {
         "background-color": this.color
+      };
+    },
+    cardStyle2() {
+      return {
+        "border-color": this.color
       };
     }
   }
@@ -60,10 +65,10 @@ h5 {
 }
 
 .card-content {
-  border-bottom:1px solid rgb(0,156,221);
+  border-bottom:1px solid;
 }
 .card {
-  border:1px solid rgb(0,156,221);
+  border:1px solid;
 }
 .five-lines-max {
   overflow: hidden;

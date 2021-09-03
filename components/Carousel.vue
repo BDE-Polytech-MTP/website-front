@@ -1,5 +1,7 @@
 <template>
-    <b-carousel
+  <section class="container">
+    <p class="actu has-text-centered">Actualités</p>
+  <b-carousel
         pause-text="Défilement automatique en pause"
         pause-info-type="is-info"
         >
@@ -20,6 +22,7 @@
             </section>
         </b-carousel-item>
     </b-carousel>
+  </section>
 </template>
 
 <style scoped>
@@ -28,6 +31,16 @@
         background-repeat:  no-repeat;
         background-size:  cover;
     }
+    .actu {
+       font-size: 60px;
+       font-weight: bold;
+       padding: 20px;
+      font-family: monospace;
+     }
+    .container {
+      margin-top:10px;
+    }
+
 </style>
 
 <script>

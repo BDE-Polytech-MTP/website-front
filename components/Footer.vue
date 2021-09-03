@@ -8,6 +8,10 @@
         <ul class="is-list-style">
           <li><small>Axel Duval</small></li>
           <li><small>Florent Hugouvieux</small></li>
+          <li><small>Julien Vendran</small></li>
+          <li><small>Quentin Desbrousses</small></li>
+          <li><small>Alexandre Fernique</small></li>
+          <li><small>Joan Teriihoania</small></li>
         </ul>
       </div>
 
