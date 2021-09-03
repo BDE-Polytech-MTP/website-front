@@ -1,0 +1,27 @@
+{
+  "trombinoscope": {
+    "id": "BDE",
+    "title": "Rejoins nous",
+    "membres":[
+      {
+        "poste": "Respo K-fet",
+        "name": "Clement Texier",
+        "picture": "test.jpg",
+        "url": "https://www.facebook.com"
+
+      },
+      {
+        "name": "test",
+        "picture": "test.jpg"
+      },
+      {
+        "name": "test2",
+        "picture": "test.jpg"
+      },
+      {
+        "name": "test3",
+        "picture": "test.jpg"
+      }
+    ]
+  }
+}
