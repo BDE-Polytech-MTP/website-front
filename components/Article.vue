@@ -82,6 +82,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
 #overlay-dots {
   position: absolute;
   bottom: 10%;
@@ -93,5 +94,8 @@ export default {
 
 #overlay-dots:hover {
   transform: scale(1.4);
+}
+.container {
+  margin-bottom: 1rem;
 }
 </style>

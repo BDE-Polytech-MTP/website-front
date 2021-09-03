@@ -167,13 +167,27 @@
         }
       },
         {
+          "carousel": {
+            "carousels" : [
+              {
+                "title": "Nouvelle page",
+                "content": "La page du BDS est à présent disponible !!",
+                "picture": "/_nuxt/assets/img/bds/logo.PNG"
+              }
+            ]
+          }
+        },
+        {
           "description": {
-            "quote": "Une période d’essai gratuite est mise en place en début d’année pour une durée d’un mois (dates communiquées ultérieurement). Ensuite pour accéder aux activitées du BDS, l’adhésion est nécessaire (….$). Cette adhésion permet aussi l’accès à des tarifs préférentiels pour les goodies du BDS (et évènements éventuels), à tous les partenariats proposés par le BDS … "
+            "quotes": [
+              "Une période d’essai gratuite est mise en place en début d’année pour une durée d’un mois (dates communiquées ultérieurement).",
+              "Ensuite pour accéder aux activitées du BDS, l’adhésion est nécessaire (….$). Cette adhésion permet aussi l’accès à des tarifs préférentiels pour les goodies du BDS (et évènements éventuels), à tous les partenariats proposés par le BDS …"
+              ]
           }
         },
         {
           "clubs": {
-            "color": "rgb(0,156,221)",
+            "color": "rgb(124,86,199)",
             "clubs": [
               {
                 "id": "club1",
@@ -272,6 +286,21 @@
                 "location": "-"
               }
             ]
+          }
+        },
+        {
+          "description": {
+            "quotes": [
+              "Pour plus d'informations contactez-nous sur les réseaux !",
+              "Facebook: @BDS.Polytech.Montpellier",
+              "Instagram: @bds_polytech_montpellier)"
+              ]
+          }
+        },
+        {
+          "social": {
+            "facebook": "https://www.facebook.com/BDS.Polytech.Montpellier/",
+            "instagram": "https://www.instagram.com/bds_polytech_montpellier/"
           }
         }
       ]
