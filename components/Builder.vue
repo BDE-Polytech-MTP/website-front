@@ -13,6 +13,7 @@
       />
 
       <Trombinoscope
+<<<<<<< HEAD
         v-else-if="typeOf(component) == 'trombinoscope'"
         :id="component.trombinoscope.id"
         :title="component.trombinoscope.title"
@@ -20,6 +21,13 @@
       />
       <Scoreboard v-else-if="typeOf(component) == 'scoreboard'" />
       <GraphScore v-else-if="typeOf(component) == 'graphscore'"></GraphScore>
+=======
+        v-else-if="typeOf(component) =='trombinoscope'"
+        :id="component.trombinoscope.id"
+        :title="component.trombinoscope.title"
+        :membres="component.trombinoscope.membres"
+        />
+>>>>>>> e595ab2 (Ajout des composants pour créer un trombinoscope)
 
       <div
         class="background-gradient-lines"
@@ -164,6 +172,7 @@ import SocialNetworks from '~/components/Social';
 import GraphScore from '~/components/GraphScore';
 export default {
   components: { SocialNetworks, GraphScore },
+
   props: {
     components: { type: Array, required: true, default: () => [] },
   },
