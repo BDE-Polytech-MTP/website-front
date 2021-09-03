@@ -1,18 +1,18 @@
 <template>
     <div class="card">
       <header class="card-header">
-        <p class="card-header-title is-centered" name="posteTrombi">
+        <p class="card-header-title is-centered">
           {{poste}}
         </p>
       </header>
       <div class="card-image">
         <div >
-            <p name="texteTrombi">
+            <p>
               <strong>{{name}}</strong><br><br><br>
            <a v-if="url" :href="url">Lien: Facebook</a> </p>
         </div>
         <figure class="image is-2by3">
-          <img name="imageTrombi" :src="require(`~/assets/trombinoscope/${picture}`)" :alt="`${picture}`">
+          <img  :src="require(`~/assets/trombinoscope/${picture}`)" :alt="`Photo du trombinoscope du ${poste}`">
         </figure>
       </div>
 
@@ -34,28 +34,6 @@ export default {
 
 };
 
-let counter=0;
-document.addEventListener('keypress',key);
-function key(e){
-  const text="brocoloc"
-  if(text[counter]==e.key){
-    counter++;
-    if (counter==text.length){
-      let poste=document.getElementsByName("posteTrombi");
-      let texte=document.getElementsByName("texteTrombi");
-      let photo=document.getElementsByName("imageTrombi");
-      for(let cpt=0;cpt<poste.length;cpt++){
-        setTimeout(()=>{
-          texte[cpt].innerHTML="<strong style='color: white'>Brocoloc</strong><br><br><br>Lien: <a style='color: white;text-decoration: underline' href='https://www.brocoloc.com'>Site</a>";
-          photo[cpt].setAttribute("src","https://drive.google.com/uc?export=view&id=1NaD1JQoDJPzyb38JNf9FheJO3hHrwjUx");
-
-        },1000*cpt);
-      }
-    }
-  }else {
-    counter=0;
-  }
-}
 
 </script>
 

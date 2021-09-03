@@ -16,7 +16,7 @@
         v-else-if="typeOf(component) =='trombinoscope'"
         :id="component.trombinoscope.id"
         :title="component.trombinoscope.title"
-        :membres="component.trombinoscope.membres"
+        :members="component.trombinoscope.members"
         />
 
       <div
