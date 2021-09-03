@@ -11,6 +11,14 @@
         :size="component.parallax.size"
         :scrollTo="component.parallax.scrollTo"
       />
+
+      <Trombinoscope
+        v-else-if="typeOf(component) =='trombinoscope'"
+        :id="component.trombinoscope.id"
+        :title="component.trombinoscope.title"
+        :membres="component.trombinoscope.membres"
+        />
+
       <div
         class="background-gradient-lines"
         v-else-if="typeOf(component) == 'article'"
@@ -85,7 +93,9 @@
 </template>
 
 <script>
+
 export default {
+
   props: {
     components: { type: Array, required: true, default: () => [] },
   },
