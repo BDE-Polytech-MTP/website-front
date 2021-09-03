@@ -1,4 +1,5 @@
 <template>
+
   <section class="container">
     <p class="actu has-text-centered">Actualités</p>
   <b-carousel
@@ -15,6 +16,7 @@
         </b-carousel-item>
     </b-carousel>
   </section>
+
 </template>
 
 <style scoped>
@@ -42,3 +44,4 @@ export default {
     }
 }
 </script>
+

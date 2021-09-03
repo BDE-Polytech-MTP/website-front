@@ -30,7 +30,7 @@
                     :item_type="item.timelineitem.item_type"
                     />
                 </div>
-                
+
                 <TimelineHeader
                 title="Fin"
                 date="0000-00-00T00:00:00.000Z"
@@ -56,8 +56,16 @@ export default {
   computed: {
     orderedItems: function(){
       return this.items.sort((a, b) => {
-        if(a.timelineitem){a = a.timelineitem}else {a = a.timelineheader}
-        if(b.timelineitem){b = b.timelineitem}else {b = b.timelineheader}
+        if(a.timelineitem){
+          a = a.timelineitem
+        } else {
+          a = a.timelineheader
+        }
+        if(b.timelineitem){
+          b = b.timelineitem
+        } else {
+          b = b.timelineheader
+        }
         return (new Date(a.date) > new Date(b.date)) ? 1 : -1
       })
     }

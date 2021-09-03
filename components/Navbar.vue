@@ -191,6 +191,21 @@
             </div>
           </div>
         </div>
+        <NuxtLink
+          :to="'/equipe/'"
+          class="navbar-item"
+        >
+          <div class="navbar-item is-hoverable is-arrowless">
+            <p class="navbar-link flex is-arrowless">
+              L'équipe
+            </p>
+            <div
+              id="members"
+            >
+            </div>
+          </div>
+        </NuxtLink>
+
 
         <div
           class="navbar-item"

@@ -532,5 +532,97 @@
         }
       ]
     }
+  ],
+  "equipe" : [
+    {
+      "title": "Team Web",
+      "description": "Ceci est une courte description pas obligatoire",
+      "members": [
+        {
+          "picture": "member",
+          "firstName": "Julien",
+          "lastName": "Vendran",
+          "mail": "julien@yopmail.com",
+          "place": "Respo",
+          "education": "IG"
+        },
+        {
+          "lastName": "Desbrousse",
+          "firstName": "Quentin",
+          "mail": "quentin@yopmail.com",
+          "place": "Respo",
+          "education": "IG"
+        },
+        {
+          "lastName": "Vendran",
+          "firstName": "Julien",
+          "mail": "julien@yopmail.com",
+          "place": "Respo",
+          "education":  "IG"
+        },
+        {
+          "lastName": "Vendran",
+          "firstName": "Julien",
+          "mail": "julien@yopmail.com",
+          "place": "Respo",
+          "education":  "IG"
+        },
+        {
+          "lastName": "Vendran",
+          "firstName": "Julien",
+          "mail": "julien@yopmail.com",
+          "place": "Respo",
+          "education":  "IG"
+        },
+        {
+          "lastName": "Vendran",
+          "firstName": "Julien",
+          "mail": "julien@yopmail.com",
+          "place": "Respo",
+          "education":  "IG"
+        },
+        {
+          "lastName": "Vendran",
+          "firstName": "Julien",
+          "mail": "julien@yopmail.com",
+          "place": "Respo",
+          "education":  "IG"
+        },
+        {
+          "lastName": "Vendran",
+          "firstName": "Julien",
+          "mail": "julien@yopmail.com",
+          "place": "Respo",
+          "education":  "IG"
+        }
+      ]
+    },
+    {
+      "title": "BR",
+      "description": "Ceci est une courte description pas obligatoire",
+      "members": [
+        {
+          "lastName": "Sylm",
+          "firstName": "Joya",
+          "mail": "Joya@yopmail.com",
+          "place": "Présidente",
+          "education":  "IG"
+        },
+        {
+          "lastName": "Feuille",
+          "firstName": "Mini",
+          "mail": "Mini@yopmail.com",
+          "place": "Vice-président",
+          "education": "IG"
+        },
+        {
+          "lastName": "Feuille",
+          "firstName": "Mini",
+          "mail": "Mini@yopmail.com",
+          "place": "Vice-président",
+          "education": "IG"
+        }
+      ]
+    }
   ]
 }

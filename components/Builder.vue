@@ -11,6 +11,14 @@
         :size="component.parallax.size"
         :scrollTo="component.parallax.scrollTo"
       />
+
+      <Trombinoscope
+        v-else-if="typeOf(component) =='trombinoscope'"
+        :id="component.trombinoscope.id"
+        :title="component.trombinoscope.title"
+        :membres="component.trombinoscope.membres"
+        />
+
       <div
         class="background-gradient-lines"
         v-else-if="typeOf(component) == 'article'"
@@ -22,6 +30,24 @@
           :contents="component.article.contents"
           :startWithImage="component.article.pictureFirst"
           :picture="component.article.picture"
+        />
+      </div>
+
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'timeline'"
+      >
+        <Timeline
+          :items="component.timeline.items"
+        />
+      </div>
+
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'carousel'"
+      >
+        <Carousel
+        :carousels="component.carousel.carousels"
         />
       </div>
 
@@ -136,11 +162,12 @@
 </template>
 
 <script>
+
 import SocialNetworks from '~/components/Social';
 export default {
   components: { SocialNetworks },
   props: {
-    components: { type: Array, required: true, default: () => new Array() },
+    components: { type: Array, required: true, default: () => [] },
   },
   methods: {
     typeOf(component) {
