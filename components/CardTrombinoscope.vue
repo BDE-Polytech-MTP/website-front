@@ -38,7 +38,7 @@ export default {
 <style scoped>
 .card-image:hover > div {
   visibility: visible;
-  background: rgba(0, 174, 239, 0.9);
+  background: rgba(160, 160, 160, 0.9);
   transition-duration: 0.6s;
 }
 .card-image:hover > div p {

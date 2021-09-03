@@ -178,6 +178,52 @@
           }
         },
         {
+          "trombinoscope": {
+            "title": "Voici notre bureau !",
+            "membres": [
+              {
+                "name": "Vincent BARRAS (MI)",
+                "poste": "PRESIDENT"
+              },
+              {
+                "name": "Maelenn MARTENOT (EGC)",
+                "poste": "VICE-PRESIDENTE"
+
+              },
+              {
+                "name": "Valentin GUILLAUME (MI)",
+                "poste": "TRESORIER"
+
+              },
+              {
+                "name": "Thibault BUFFIERE (STE)",
+                "poste": "VICE-TRESORIER"
+
+              },
+              {
+                "name": "Louise MONMUSSON (GBA)",
+                "poste": "SECRETAIRE"
+
+              },
+              {
+                "name": "Doriane N'GUESSAN (GBA)",
+                "poste": "PARTENARIATS / GOODIES"
+
+              },
+              {
+                "name": "Rémi BARONE (EGC)",
+                "poste": "PARTENARIATS / GOODIES"
+
+              },
+              {
+                "name": "Malo ENEL (MI)",
+                "poste": "COMMUNICATION"
+
+              }
+            ]
+          }
+        },
+        {
           "description": {
             "quotes": [
               "Une période d’essai gratuite est mise en place en début d’année pour une durée d’un mois (dates communiquées ultérieurement).",

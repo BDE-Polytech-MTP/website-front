@@ -138,6 +138,16 @@
         />
       </div>
 
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'trombinoscope'"
+      >
+        <Trombinoscope
+          :title="component.trombinoscope.title"
+          :membres="component.trombinoscope.membres"
+        />
+      </div>
+
       <p v-else>-</p>
     </div>
   </div>
