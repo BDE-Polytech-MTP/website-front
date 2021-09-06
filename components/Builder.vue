@@ -18,6 +18,14 @@
         :title="component.trombinoscope.title"
         :members="component.trombinoscope.members"
         />
+      <Scoreboard
+        v-else-if="typeOf(component)=='scoreboard'"
+        :title="component.scoreboard.title"
+        :idsheet="component.scoreboard.idsheet"
+        :numberTeam="component.scoreboard.numberTeam"
+
+      />
+
 
       <div
         class="background-gradient-lines"
@@ -57,6 +65,8 @@
         :assets="component.assets.data"
         :picture="component.assets.picture"
       />
+
+
 
       <TimeLocation
         v-else-if="typeOf(component) == 'timelocation'"
@@ -112,8 +122,9 @@
 
 <script>
 
+import GraphScore from "~/components/GraphScore";
 export default {
-
+  components: { GraphScore },
   props: {
     components: { type: Array, required: true, default: () => [] },
   },
