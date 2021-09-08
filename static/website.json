@@ -180,7 +180,7 @@
         {
           "trombinoscope": {
             "title": "Voici notre bureau !",
-            "membres": [
+            "members": [
               {
                 "name": "Vincent BARRAS (MI)",
                 "poste": "PRESIDENT"
@@ -188,7 +188,6 @@
               {
                 "name": "Maelenn MARTENOT (EGC)",
                 "poste": "VICE-PRESIDENTE"
-
               },
               {
                 "name": "Valentin GUILLAUME (MI)",
@@ -198,27 +197,22 @@
               {
                 "name": "Thibault BUFFIERE (STE)",
                 "poste": "VICE-TRESORIER"
-
               },
               {
                 "name": "Louise MONMUSSON (GBA)",
                 "poste": "SECRETAIRE"
-
               },
               {
                 "name": "Doriane N'GUESSAN (GBA)",
                 "poste": "PARTENARIATS / GOODIES"
-
               },
               {
                 "name": "Rémi BARONE (EGC)",
                 "poste": "PARTENARIATS / GOODIES"
-
               },
               {
                 "name": "Malo ENEL (MI)",
                 "poste": "COMMUNICATION"
-
               }
             ]
           }

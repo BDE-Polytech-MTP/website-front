@@ -15,7 +15,7 @@
       </div>
       <figure class="image is-2by3">
         <img
-          :src="require(`~/assets/trombinoscope/${picture}`)"
+          :src="require(`~/assets/img/${picture}`)"
           :alt="`Photo du trombinoscope du ${poste}`"
         />
       </figure>
@@ -28,7 +28,7 @@ export default {
   name: 'CardTrombinoscope',
   props: {
     poste: { type: String, required: false, default: 'Job not found' },
-    picture: { type: String, required: false, default: 'error.jpg' },
+    picture: { type: String, required: false, default: 'default-profile.webp' },
     url: { type: String, required: false },
     name: { type: String, required: false, default: 'Name not found' },
   },
