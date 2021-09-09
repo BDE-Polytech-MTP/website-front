@@ -1,7 +1,10 @@
 <template>
   <nav class="navbar is-fixed-top">
     <div class="navbar-brand">
-      <NuxtLink to="/">
+      <NuxtLink
+        to="/"
+        @click="toggle('burger')"
+      >
         <img
           style="height: 4rem; padding: 0.3rem"
           src="~assets/img/logo.png"
@@ -33,7 +36,7 @@
                     <div class="level-item">
                       <p>
                         <strong
-                          >{{ bureau.emoji }}
+                        >{{ bureau.emoji }}
                           {{ capitalize(bureau.nom) }}</strong
                         >
                         <br />
@@ -191,31 +194,37 @@
             </div>
           </div>
         </div>
+
         <NuxtLink
-          :to="'/equipe/'"
+          :to="'/compte/'"
           class="navbar-item"
+          v-if="$auth.loggedIn"
         >
-          <div class="navbar-item is-hoverable is-arrowless">
-            <p class="navbar-link flex is-arrowless">
-              L'équipe
-            </p>
-            <div
-              id="members"
+          <div
+            class="navbar-item is-hoverable is-arrowless is-mega"
+            @click="toggle('burger')"
             >
-            </div>
+            <p class="navbar-link flex is-arrowless">
+              Mon compte
+            </p>
           </div>
         </NuxtLink>
 
-
-        <div
+        <NuxtLink
+          :to="'/validationMembres/'"
           class="navbar-item"
-          v-if="$auth.loggedIn"
-          @click="toggle('burger')"
+          v-if="$auth.loggedIn && $auth.user.roles.length !== 0"
         >
-          <NuxtLink to="/compte">
-            <p style="color: #4a4a4a">Mon compte</p>
-          </NuxtLink>
-        </div>
+        <!-- if the user is logged in and its an admin -->
+          <div
+            class="navbar-item is-hoverable is-arrowless is-mega"
+            @click="toggle('burger')"
+          >
+            <p class="navbar-link flex is-arrowless">
+              Validation membres
+            </p>
+          </div>
+        </NuxtLink>
       </div>
 
       <div class="navbar-end mr-4">
@@ -247,9 +256,29 @@
           >
             Connexion
           </b-button>
+
+          <b-button
+            type="is-light"
+            v-if='!$auth.loggedIn'
+            @click ="isSignInModalActive = true"
+          >
+            Inscription
+          </b-button>
+
         </div>
       </div>
     </div>
+
+    <b-modal
+      v-model="isSignInModalActive"
+      :can-cancel="[false, false, false]"
+      aria-role="dialog"
+      has-modal-card
+    >
+      <div>
+        <SignIn @close="isSignInModalActive = false" @signin="handleSignIn()" />
+      </div>
+    </b-modal>
 
     <b-modal
       v-model="isLoginModalActive"
@@ -267,9 +296,11 @@
 <script>
 import website from '~/static/website.json';
 import social from '~/static/social-networks.json';
+import SignIn from '~/components/SignIn';
 
 export default {
   name: 'Navbar',
+  components: { SignIn },
   data() {
     return {
       hdr: website,
@@ -281,6 +312,7 @@ export default {
         associations: '',
       },
       isLoginModalActive: false,
+      isSignInModalActive: false,
     };
   },
   methods: {
@@ -307,6 +339,13 @@ export default {
       this.isLoginModalActive = false;
       this.$buefy.toast.open({
         message: 'Tu es maintenant connecté ✅',
+        type: 'is-success',
+      });
+    },
+    handleSignIn(){
+      this.isSignInModalActive = false;
+      this.$buefy.toast.open({
+        message: 'Ton compte est maintenant en attente de validation 🛡️',
         type: 'is-success',
       });
     },

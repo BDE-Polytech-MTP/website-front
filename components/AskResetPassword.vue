@@ -78,6 +78,7 @@ export default {
               message: "Impossible de se connecter au serveur ❌",
               type: "is-danger",
             });
+            this.$emit("close");
           })
           .finally(() => {
             this.isLoading = false;
