@@ -196,20 +196,6 @@
         </div>
 
         <NuxtLink
-          :to="'/equipe/'"
-          class="navbar-item"
-        >
-          <div
-            class="navbar-item is-hoverable is-arrowless is-mega"
-            @click="toggle('burger')"
-          >
-            <p class="navbar-link flex is-arrowless">
-              L'équipe
-            </p>
-          </div>
-        </NuxtLink>
-
-        <NuxtLink
           :to="'/compte/'"
           class="navbar-item"
           v-if="$auth.loggedIn"
