@@ -1,6 +1,6 @@
 <template>
   <BuilderTeam
-  :components="components"
+    :components="components"
   />
 </template>
 
@@ -16,5 +16,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
