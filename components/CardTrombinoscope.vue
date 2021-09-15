@@ -23,7 +23,7 @@
 export default {
   props:{
     poste:{type:String ,required: false , default:"Job not found"},
-    picture :{type:String, required: false,default:"logo.PNG" },
+    picture :{type:String, required: false,default:"error.jpg" },
     url:{type:String,required:false},
     name:{type:String,required:true,default:"Name not found" },
     description:{type:String, required: false }

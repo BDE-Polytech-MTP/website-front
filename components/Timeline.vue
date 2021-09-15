@@ -1,6 +1,6 @@
 <template>
     <section class="container">
-        <article class="section is-medium">
+        <article class="section is-medium" >
             <div class="timeline">
                 <TimelineHeader
                 title="Début"

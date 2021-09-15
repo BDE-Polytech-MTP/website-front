@@ -361,20 +361,48 @@
         {
           "article": {
             "id": "bdaArticle",
-            "title": "Bureau des arts",
-            "subtitle": "Bureaux",
+            "title": "Bienvenue au BDA",
+            "subtitle": "Bureau Des Arts",
             "contents": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum.",
-              "Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique."
+              "Voici la branche artistique du bureau des étudiants. Nous nous occupons d'organiser plusieurs évènements culturels tout au long de l'année.",
+              "Le BDA c'est aussi de nombreux clubs dans lesquels tu pourras découvrir de nouvelles personnes et de nouvelles activités."
             ],
-            "picture": "organigram.jpg",
+            "picture": "bda/logo-bda.png",
             "pictureFirst": true
           }
         },
         {
-          "picture": {
-            "id": "bde-organigram",
-            "picture": "organigram.jpg"
+          "carousel": {
+            "carousels" : [
+              {
+                "title": "Nouvelle page",
+                "content": "La page du BDA est à présent disponible !!",
+                "picture": "/_nuxt/assets/img/bda/logo-bda.png"
+              }
+            ]
+          }
+        },
+        {
+          "description": {
+            "quotes": [
+              "Le BDA, c'est qui?",
+              "C'est un groupe de 12 personnes très motivées venants de plain de filières différentes qui vont tout donner pour vous faire vivre votre meilleure année à Polytech !"
+            ]
+          }
+        },
+        {
+          "description": {
+            "quotes": [
+              "Si vous voulez plus d'informations sur les évènements, le BDA ou les clubs, envoyez un message à l'un d'entre nous ou sur les réseaux du BDA",
+              "Instagram: bda_polytech_montpellier",
+              "Facebook: BDA polytech Montpellier"
+            ]
+          }
+        },
+        {
+          "social": {
+            "facebook": "https://www.facebook.com/PolytechMontpellierBDA/",
+            "instagram": "https://www.instagram.com/bda_polytech_montpellier/"
           }
         }
       ]
@@ -575,98 +603,6 @@
           "nom": "Les tigresses",
           "emoji": "🐯",
           "lieu": "Clermont-Ferrand"
-        }
-      ]
-    }
-  ],
-  "equipe" : [
-    {
-      "title": "Team Web",
-      "description": "Ceci est une courte description pas obligatoire",
-      "members": [
-        {
-          "picture": "member",
-          "firstName": "Julien",
-          "lastName": "Vendran",
-          "mail": "julien@yopmail.com",
-          "place": "Respo",
-          "education": "IG"
-        },
-        {
-          "lastName": "Desbrousse",
-          "firstName": "Quentin",
-          "mail": "quentin@yopmail.com",
-          "place": "Respo",
-          "education": "IG"
-        },
-        {
-          "lastName": "Vendran",
-          "firstName": "Julien",
-          "mail": "julien@yopmail.com",
-          "place": "Respo",
-          "education":  "IG"
-        },
-        {
-          "lastName": "Vendran",
-          "firstName": "Julien",
-          "mail": "julien@yopmail.com",
-          "place": "Respo",
-          "education":  "IG"
-        },
-        {
-          "lastName": "Vendran",
-          "firstName": "Julien",
-          "mail": "julien@yopmail.com",
-          "place": "Respo",
-          "education":  "IG"
-        },
-        {
-          "lastName": "Vendran",
-          "firstName": "Julien",
-          "mail": "julien@yopmail.com",
-          "place": "Respo",
-          "education":  "IG"
-        },
-        {
-          "lastName": "Vendran",
-          "firstName": "Julien",
-          "mail": "julien@yopmail.com",
-          "place": "Respo",
-          "education":  "IG"
-        },
-        {
-          "lastName": "Vendran",
-          "firstName": "Julien",
-          "mail": "julien@yopmail.com",
-          "place": "Respo",
-          "education":  "IG"
-        }
-      ]
-    },
-    {
-      "title": "BR",
-      "description": "Ceci est une courte description pas obligatoire",
-      "members": [
-        {
-          "lastName": "Sylm",
-          "firstName": "Joya",
-          "mail": "Joya@yopmail.com",
-          "place": "Présidente",
-          "education":  "IG"
-        },
-        {
-          "lastName": "Feuille",
-          "firstName": "Mini",
-          "mail": "Mini@yopmail.com",
-          "place": "Vice-président",
-          "education": "IG"
-        },
-        {
-          "lastName": "Feuille",
-          "firstName": "Mini",
-          "mail": "Mini@yopmail.com",
-          "place": "Vice-président",
-          "education": "IG"
         }
       ]
     }
