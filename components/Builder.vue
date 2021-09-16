@@ -20,11 +20,10 @@
         />
       <Scoreboard
         v-else-if="typeOf(component)=='scoreboard'"
-        :title="component.scoreboard.title"
-        :idsheet="component.scoreboard.idsheet"
-        :numberTeam="component.scoreboard.numberTeam"
-
       />
+      <GraphScore
+        v-else-if="typeOf(component)=='graphscore'"
+        ></GraphScore>
 
 
       <div

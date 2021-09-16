@@ -205,6 +205,20 @@
             </div>
           </div>
         </NuxtLink>
+        <NuxtLink
+          :to="'/intégration/'"
+          class="navbar-item"
+        >
+          <div class="navbar-item is-hoverable is-arrowless">
+            <p class="navbar-link flex is-arrowless">
+              L'1T
+            </p>
+            <div
+              id="members"
+            >
+            </div>
+          </div>
+        </NuxtLink>
 
 
         <div
