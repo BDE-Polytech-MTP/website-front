@@ -10,7 +10,7 @@
         </p>
         <a class="card-header-icon">
           <b-icon
-            :icon="props.open ? 'menu-down' : 'menu-up'">
+            :icon="props.open ? 'menu-down' : 'menu-right'">
           </b-icon>
         </a>
       </div>
