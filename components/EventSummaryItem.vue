@@ -38,7 +38,7 @@
           />
           <NuxtLink v-else :to="`/reservations/${event.id}`">
             <b-button
-              type="card-footer-item is-primary is-flex-grow-0"
+              type="card-footer-item is-success is-flex-grow-0"
               label="Ma réservation >"
             />
           </NuxtLink>
