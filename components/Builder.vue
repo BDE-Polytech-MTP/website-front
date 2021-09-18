@@ -13,11 +13,13 @@
       />
 
       <Trombinoscope
-        v-else-if="typeOf(component) =='trombinoscope'"
+        v-else-if="typeOf(component) == 'trombinoscope'"
         :id="component.trombinoscope.id"
         :title="component.trombinoscope.title"
         :members="component.trombinoscope.members"
-        />
+      />
+      <Scoreboard v-else-if="typeOf(component) == 'scoreboard'" />
+      <GraphScore v-else-if="typeOf(component) == 'graphscore'"></GraphScore>
 
       <div
         class="background-gradient-lines"
@@ -32,23 +34,19 @@
           :picture="component.article.picture"
         />
       </div>
-      
+
       <div
         class="background-gradient-lines"
         v-else-if="typeOf(component) == 'timeline'"
       >
-        <Timeline
-          :items="component.timeline.items"
-        />
+        <Timeline :items="component.timeline.items" />
       </div>
-      
+
       <div
         class="background-gradient-lines"
         v-else-if="typeOf(component) == 'carousel'"
       >
-        <Carousel
-        :carousels="component.carousel.carousels"
-        />
+        <Carousel :carousels="component.carousel.carousels" />
       </div>
 
       <Assets
@@ -111,9 +109,9 @@
 </template>
 
 <script>
-
+import GraphScore from '~/components/GraphScore';
 export default {
-
+  components: { GraphScore },
   props: {
     components: { type: Array, required: true, default: () => [] },
   },
