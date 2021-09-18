@@ -17,7 +17,7 @@
     "core-js": "^3.11.0",
     "graphql-tag": "^2.11.0",
     "node-sass": "^5.0.0",
-    "nuxt": "^2.15.4",
+    "nuxt": "^2.15.8",
     "nuxt-buefy": "^0.4.7",
     "sass-loader": "^10.1.1",
     "vue-chartjs": "^3.5.1"
