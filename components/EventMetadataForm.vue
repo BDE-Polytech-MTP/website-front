@@ -73,6 +73,15 @@ export default {
     title: function () {
       this.checkValidity();
     },
+    description: function () {
+      this.checkValidity();
+    },
+    bookingStart: function () {
+      this.checkValidity();
+    },
+    bookingEnd: function () {
+      this.checkValidity();
+    },
   },
   methods: {
     onTitleUpdate(valid, value) {
