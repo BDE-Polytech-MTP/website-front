@@ -1,8 +1,6 @@
 <template>
   <div>
-    <Builder
-      :components="components" />
-
+    <Builder :components="components" />
   </div>
 </template>
 
@@ -12,13 +10,10 @@ export default {
   data() {
     return {
       components: website.integration,
-
     };
   },
-
 };
 </script>
 
 <style scoped>
-
 </style>
