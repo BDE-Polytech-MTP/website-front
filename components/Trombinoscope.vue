@@ -1,9 +1,8 @@
 <template>
   <section class="container">
-    <article class="section is-medium">
-      <h1 v-if="title" class="title is-1 has-text-centered mb-6">
-        {{ title }}
-      </h1>
+
+    <article class="section is-medium trombi">
+      <h1 v-if="title" class="title is-1 has-text-centered mb-6">{{title}}</h1>
 
       <div class="columns is-multiline is-centered">
         <div
@@ -36,6 +35,15 @@ export default {
 };
 </script>
 
+<<<<<<< HEAD
 <style scoped>
 </style>
 
+=======
+<style>
+.trombi {
+  margin-top: 0px;
+  padding: 10px;
+}
+</style>
+>>>>>>> 36c0db6 (trombi page bde)
