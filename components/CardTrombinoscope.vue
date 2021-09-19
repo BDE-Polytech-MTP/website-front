@@ -12,7 +12,7 @@
            <a v-if="url" :href="url">Lien: Facebook</a> </p>
         </div>
         <figure class="image is-2by3">
-          <img v-if="picture" :src="require(`~/assets/img/bds/trombinoscope/${picture}`)" :alt="`${picture}`">
+          <img v-if="picture" :src="require(`~/assets/img/${picture}`)" :alt="`${picture}`">
         </figure>
       </div>
     </div>
@@ -23,7 +23,7 @@
 export default {
   props:{
     poste:{type:String ,required: false , default:"Job not found"},
-    picture :{type:String, required: false,default:"error.jpg" },
+    picture :{type:String, required: false,default:"logo380.png" },
     url:{type:String,required:false},
     name:{type:String,required:true,default:"Name not found" },
     description:{type:String, required: false }
