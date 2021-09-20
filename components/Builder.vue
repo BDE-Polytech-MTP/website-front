@@ -12,12 +12,6 @@
         :scrollTo="component.parallax.scrollTo"
       />
 
-      <Trombinoscope
-        v-else-if="typeOf(component) == 'trombinoscope'"
-        :id="component.trombinoscope.id"
-        :title="component.trombinoscope.title"
-        :members="component.trombinoscope.members"
-      />
       <Scoreboard v-else-if="typeOf(component) == 'scoreboard'" />
       <GraphScore v-else-if="typeOf(component) == 'graphscore'"></GraphScore>
 
@@ -103,6 +97,48 @@
           :features="component.features.data"
         />
       </div>
+
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'clubs'"
+      >
+        <Clubs
+          :clubs="component.clubs.clubs"
+          :color="component.clubs.color"
+        />
+      </div>
+
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'description'"
+      >
+        <Description
+          :quotes="component.description.quotes"
+        />
+      </div>
+
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'social'"
+      >
+        <Social
+          :facebook="component.social.facebook"
+          :instagram="component.social.instagram"
+          :snapchat="component.social.snapchat"
+          :tiktok="component.social.tiktok"
+        />
+      </div>
+
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'trombinoscope'"
+      >
+        <Trombinoscope
+          :title="component.trombinoscope.title"
+          :members="component.trombinoscope.members"
+        />
+      </div>
+
       <p v-else>-</p>
     </div>
   </div>
