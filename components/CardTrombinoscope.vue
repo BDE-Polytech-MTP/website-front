@@ -16,6 +16,10 @@
         </figure>
       </div>
     </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 41dfcf0e46993ce32209000957717c9235a16d42
 </template>
 
 <script>
@@ -54,7 +58,6 @@ a{
   margin: auto;
 }
 div .card-image div{
-
   position: absolute;
   visibility: hidden;
   display: flex;

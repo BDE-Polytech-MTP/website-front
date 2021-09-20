@@ -62,13 +62,11 @@ export default {
         } else {
           a = a.timelineheader
         }
-
         if(b.timelineitem){
           b = b.timelineitem
         } else {
           b = b.timelineheader
         }
-
         return (new Date(a.date) > new Date(b.date)) ? 1 : -1
       })
     }

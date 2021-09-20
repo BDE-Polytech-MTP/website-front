@@ -51,6 +51,14 @@
         :carousels="component.carousel.carousels"
         />
       </div>
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'carousel'"
+      >
+        <Carousel
+        :carousels="component.carousel.carousels"
+        />
+      </div>
 
       <div
         class="background-gradient-lines"

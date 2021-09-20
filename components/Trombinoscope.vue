@@ -36,15 +36,10 @@ export default {
 };
 </script>
 
-<<<<<<< HEAD
-<style scoped>
-</style>
-
-=======
 <style>
 .trombi {
   margin-top: 0px;
   padding: 0px;
 }
 </style>
->>>>>>> 36c0db6 (trombi page bde)
+
