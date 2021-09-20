@@ -146,7 +146,7 @@
       >
         <Trombinoscope
           :title="component.trombinoscope.title"
-          :membres="component.trombinoscope.membres"
+          :members="component.trombinoscope.members"
         />
       </div>
 
