@@ -103,6 +103,49 @@
           :features="component.features.data"
         />
       </div>
+
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'clubs'"
+      >
+        <Clubs
+          :clubs="component.clubs.clubs"
+          :color="component.clubs.color"
+        />
+      </div>
+
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'description'"
+      >
+        <Description
+          :quotes="component.description.quotes"
+        />
+      </div>
+
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'social'"
+      >
+        <Social
+          :facebook="component.social.facebook"
+          :instagram="component.social.instagram"
+          :snapchat="component.social.snapchat"
+          :tiktok="component.social.tiktok"
+          :mail="component.social.mail"
+        />
+      </div>
+
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'trombinoscope'"
+      >
+        <Trombinoscope
+          :title="component.trombinoscope.title"
+          :membres="component.trombinoscope.membres"
+        />
+      </div>
+
       <p v-else>-</p>
     </div>
   </div>
