@@ -17,6 +17,14 @@
   </section>
 </template>
 
+<script>
+export default {
+  props: {
+    carousels: { type: Array, required: true }
+  }
+}
+</script>
+
 <style scoped>
     .bg-img {
         background-position: center center;
@@ -35,11 +43,5 @@
 
 </style>
 
-<script>
-export default {
-    props: {
-        carousels: { type: Array, required: true }
-    }
-}
-</script>
+
 
