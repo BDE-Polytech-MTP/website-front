@@ -11,7 +11,7 @@
         :size="component.parallax.size"
         :scrollTo="component.parallax.scrollTo"
       />
-      
+
       <Scoreboard v-else-if="typeOf(component) == 'scoreboard'" />
       <GraphScore v-else-if="typeOf(component) == 'graphscore'"></GraphScore>
 
@@ -126,7 +126,6 @@
           :instagram="component.social.instagram"
           :snapchat="component.social.snapchat"
           :tiktok="component.social.tiktok"
-          :mail="component.social.mail"
         />
       </div>
 
