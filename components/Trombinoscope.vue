@@ -10,13 +10,13 @@
           v-for="member in members"
           v-bind:key="member.name"
         >
+
           <CardTrombinoscope
             :name="member.name"
             :picture="member.picture"
             :poste="member.poste"
             :url="member.url"
             :description="member.description"
-
           />
         </div>
       </div>
@@ -32,6 +32,7 @@ export default {
     members: { type: Array, required: true },
   },
 
+
 };
 </script>
 
@@ -43,7 +44,7 @@ export default {
 <style>
 .trombi {
   margin-top: 0px;
-  padding: 10px;
+  padding: 0px;
 }
 </style>
 >>>>>>> 36c0db6 (trombi page bde)

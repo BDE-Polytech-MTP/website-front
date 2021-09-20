@@ -3,12 +3,15 @@
         "carousels":[
         {
             "title": "Slide 1",
-            "content": "Coucou",
+            "content": [
+              "Coucou",
+              "salut"
+            ],
             "picture": "https://picsum.photos/200"
         },
         {
             "title": "Slide 2",
-            "content": "Aurevoir",
+            "content": ["Aurevoir"],
             "picture": "https://picsum.photos/500"
         }
         ]

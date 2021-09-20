@@ -26,18 +26,18 @@
         <div class="navbar-item has-dropdown is-hoverable">
           <p class="navbar-link" @click="toggle('bureaux')">Bureaux</p>
           <div id="bureaux" :class="'navbar-dropdown ' + dropdowns.bureaux">
-            <div v-for="bureau in hdr.bureaux" v-bind:key="bureau.id">
-              <NuxtLink class="navbar-item" :to="'/bureaux/' + bureau.id">
+            <div v-for="b in bureau.bureaux" v-bind:key="b.id">
+              <NuxtLink class="navbar-item" :to="'/bureaux/' + b.id">
                 <div class="level is-mobile">
                   <div class="level-left">
                     <div class="level-item">
                       <p>
                         <strong
-                          >{{ bureau.emoji }}
-                          {{ capitalize(bureau.nom) }}</strong
+                          >{{ b.emoji }}
+                          {{ capitalize(b.nom) }}</strong
                         >
                         <br />
-                        <small>{{ capitalize(bureau.header) }}</small>
+                        <small>{{ capitalize(b.header) }}</small>
                       </p>
                     </div>
                   </div>
@@ -264,12 +264,14 @@
 <script>
 import website from '~/static/website.json';
 import social from '~/static/social-networks.json';
+import bureauxJSON from '~/static/bureaux.json';
 
 export default {
   name: 'Navbar',
   data() {
     return {
       hdr: website,
+      bureau: bureauxJSON,
       social: social,
       dropdowns: {
         burger: '',
