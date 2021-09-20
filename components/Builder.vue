@@ -11,13 +11,7 @@
         :size="component.parallax.size"
         :scrollTo="component.parallax.scrollTo"
       />
-
-      <Trombinoscope
-        v-else-if="typeOf(component) == 'trombinoscope'"
-        :id="component.trombinoscope.id"
-        :title="component.trombinoscope.title"
-        :members="component.trombinoscope.members"
-      />
+      
       <Scoreboard v-else-if="typeOf(component) == 'scoreboard'" />
       <GraphScore v-else-if="typeOf(component) == 'graphscore'"></GraphScore>
 
@@ -142,7 +136,7 @@
       >
         <Trombinoscope
           :title="component.trombinoscope.title"
-          :membres="component.trombinoscope.membres"
+          :members="component.trombinoscope.members"
         />
       </div>
 
