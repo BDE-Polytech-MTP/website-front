@@ -1000,7 +1000,7 @@
               "Voici la branche artistique du bureau des étudiants. Nous nous occupons d'organiser plusieurs évènements culturels tout au long de l'année.",
               "Le BDA c'est aussi de nombreux clubs dans lesquels tu pourras découvrir de nouvelles personnes et de nouvelles activités."
             ],
-            "picture": "bda/logo-bda.png",
+            "picture": "bda/team/team-bda.JPG",
             "pictureFirst": true
           }
         },
@@ -1009,8 +1009,18 @@
             "carousels" : [
               {
                 "title": "Nouvelle page",
-                "content": "La page du BDA est à présent disponible !!",
+                "content": ["La page du BDA est à présent disponible !!"],
                 "picture": "/_nuxt/assets/img/bda/logo-bda.png"
+              },
+              {
+                "title": "Evènements 2021",
+                "content": ["Voilà ce que nous vous avons préparé pour ce début d'année !"],
+                "picture": "/_nuxt/assets/img/bda/event-2021.png"
+              },
+              {
+                "title": "Evènements 2022",
+                "content": ["Les event de 2022 sont annoncés, nous vous transmettrons les dates définitives"],
+                "picture": "/_nuxt/assets/img/bda/event-2022.png"
               }
             ]
           }
@@ -1019,7 +1029,207 @@
           "description": {
             "quotes": [
               "Le BDA, c'est qui?",
-              "C'est un groupe de 12 personnes très motivées venants de plain de filières différentes qui vont tout donner pour vous faire vivre votre meilleure année à Polytech !"
+              "C'est un groupe de 12 personnes très motivées venant de plain de filières différentes qui vont tout donner pour vous faire vivre votre meilleure année à Polytech !"
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Notre bureau",
+            "members": [
+              {
+                "name": "Djaber Gadi",
+                "poste": "Président",
+                "picture": "bda/team/respo-bda-djaber.JPG"
+              },
+              {
+                "name": "Vincent Lambert",
+                "poste": "Vice-Président",
+                "picture": "bda/team/vice-respo-bda-vincent.JPG"
+              },
+              {
+                "name": "Kenza Fazid",
+                "poste": "Trésorière",
+                "picture": "bda/team/bda-trez-kenza.JPG"
+              },
+              {
+                "name": "Julie Legrand",
+                "poste": "Secrétaire",
+                "picture": "bda/team/bda-secretaire-julie.JPG"
+              },
+              {
+                "name": "Marine Cantaloube",
+                "poste": "Respo Com",
+                "picture": "bda/team/bda-com-marine.JPG"
+              },
+              {
+                "name": "Afaf Bentouil",
+                "poste": "Respo Club",
+                "picture": "bda/team/bda-respo-club-afaf.JPG"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Notre staff",
+            "members": [
+              {
+                "name": "Tifaine Delteil",
+                "poste": "Membre",
+                "picture": "bde/promo/respo-mea-tifaine.JPG"
+              },
+              {
+                "name": "Alexandre Jacquelin",
+                "poste": "Membre"
+              },
+              {
+                "name": "Enzo Rafinesque",
+                "poste": "Membre"
+              },
+              {
+                "name": "Lucie Laboisseret",
+                "poste": "Membre",
+                "picture": "bde/peip/team-peip-lucie.JPG"
+              },
+              {
+                "name": "Mathilde Vne",
+                "poste": "Membre"
+              },
+              {
+                "name": "Camille Herrmann",
+                "poste": "Membre"
+              },
+              {
+                "name": "Emilie Mgte",
+                "poste": "Membre"
+              }
+            ]
+          }
+        },
+        {
+          "description": {
+            "quotes": [
+              "Vous retrouverez tous nos clubs ci-dessous !"
+            ]
+          }
+        },
+        {
+          "clubs": {
+            "color": "rgb(229,7,50)",
+            "clubs": [
+              {
+                "id": "club1",
+                "image": "/_nuxt/assets/img/bda/clubs/theater.jpg",
+                "title": "Dramatech",
+                "directedBy": "Danaé Quetsch",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club2",
+                "image": "/_nuxt/assets/img/bda/clubs/japan.jpg",
+                "title": "Japantech",
+                "directedBy": "Bastien Muraccioli",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club3",
+                "image": "/_nuxt/assets/img/bda/clubs/games.jpg",
+                "title": "Ludotech",
+                "directedBy": "Keven Dvorianoff",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club4",
+                "image": "",
+                "title": "Musitech",
+                "directedBy": "Corentin Raveleau et Thibault Ben",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club5",
+                "image": "/_nuxt/assets/img/bda/clubs/mix.jpg",
+                "title": "Polybeats",
+                "directedBy": "Lucas Beaudrier et Constantin Gaboury",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club6",
+                "image": "/_nuxt/assets/img/bda/clubs/beer.jpg",
+                "title": "Polybière",
+                "directedBy": "Timi Duban",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club7",
+                "image": "/_nuxt/assets/img/bda/clubs/cook.jpg",
+                "title": "Polycook",
+                "directedBy": "Rémi Lefranc",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club8",
+                "image": "",
+                "title": "Polymove",
+                "directedBy": "Clémence Desphelipon",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club9",
+                "image": "",
+                "title": "Polypix",
+                "directedBy": "Loritha Vel et Vincent Lambert",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club10",
+                "image": "/_nuxt/assets/img/bda/clubs/robot.jpg",
+                "title": "Robotech",
+                "directedBy": "Xavier Sulli",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club11",
+                "image": "/_nuxt/assets/img/bda/clubs/electric-guitar.png",
+                "title": "The rock",
+                "directedBy": "Valentin Lefebvre",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club12",
+                "image": "",
+                "title": "PolyRole",
+                "directedBy": "Liam Rice",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club13",
+                "image": "",
+                "title": "Pol-Esport",
+                "directedBy": "Bryan Bardou",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club14",
+                "image": "/_nuxt/assets/img/bda/clubs/chess.jpg",
+                "title": "PolyChess",
+                "directedBy": "Alex Benbouazza",
+                "hour": "-",
+                "location": "-"
+              }
             ]
           }
         },

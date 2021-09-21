@@ -3,7 +3,7 @@
     <article class="section is-medium">
       <p class="title has-text-centered" :style="headerColor">Découvrez nos clubs</p>
       <br>
-      <div class="columns is-multiline">
+      <div class="columns is-3-mobile is-multiline">
         <div class="column is-one-third" v-for="club in computedClubs" v-bind:key="club.title">
           <Club
             :title="club.title"
