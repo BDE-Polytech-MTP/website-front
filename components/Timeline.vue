@@ -1,6 +1,6 @@
 <template>
     <section class="container">
-        <article class="section is-medium">
+        <article class="section is-medium" >
             <div class="timeline">
                 <TimelineHeader
                 title="Début"
@@ -19,6 +19,7 @@
                     :size="'small'"
                     />
 
+
                     <TimelineItem
                     v-else
                     :title="item.timelineitem.title"
@@ -30,7 +31,7 @@
                     :item_type="item.timelineitem.item_type"
                     />
                 </div>
-                
+
                 <TimelineHeader
                 title="Fin"
                 date="0000-00-00T00:00:00.000Z"
@@ -61,13 +62,11 @@ export default {
         } else {
           a = a.timelineheader
         }
-        
         if(b.timelineitem){
           b = b.timelineitem
         } else {
           b = b.timelineheader
         }
-        
         return (new Date(a.date) > new Date(b.date)) ? 1 : -1
       })
     }

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import website from '~/static/website.json';
+import website from '~/static/bureaux.json';
 export default {
   validate({ params }) {
     let res = false;

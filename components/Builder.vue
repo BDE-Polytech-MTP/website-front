@@ -11,7 +11,6 @@
         :size="component.parallax.size"
         :scrollTo="component.parallax.scrollTo"
       />
-
       <Trombinoscope
         v-else-if="typeOf(component) == 'trombinoscope'"
         :id="component.trombinoscope.id"
@@ -32,6 +31,32 @@
           :contents="component.article.contents"
           :startWithImage="component.article.pictureFirst"
           :picture="component.article.picture"
+        />
+      </div>
+
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'timeline'"
+      >
+        <Timeline
+          :items="component.timeline.items"
+        />
+      </div>
+
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'carousel'"
+      >
+        <Carousel
+        :carousels="component.carousel.carousels"
+        />
+      </div>
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'carousel'"
+      >
+        <Carousel
+        :carousels="component.carousel.carousels"
         />
       </div>
 
@@ -103,15 +128,60 @@
           :features="component.features.data"
         />
       </div>
+
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'clubs'"
+      >
+        <Clubs
+          :clubs="component.clubs.clubs"
+          :color="component.clubs.color"
+        />
+      </div>
+
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'description'"
+      >
+        <Description
+          :quotes="component.description.quotes"
+        />
+      </div>
+
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'social'"
+      >
+        <Social
+          :facebook="component.social.facebook"
+          :instagram="component.social.instagram"
+          :snapchat="component.social.snapchat"
+          :tiktok="component.social.tiktok"
+          :mail="component.social.mail"
+        />
+      </div>
+
+      <div
+        class="background-gradient-lines"
+        v-else-if="typeOf(component) == 'trombinoscope'"
+      >
+        <Trombinoscope
+          :title="component.trombinoscope.title"
+          :members="component.trombinoscope.members"
+        />
+      </div>
+
       <p v-else>-</p>
     </div>
   </div>
 </template>
 
 <script>
+import SocialNetworks from '~/components/Social';
 import GraphScore from '~/components/GraphScore';
+import Trombinoscope from '~/components/Trombinoscope';
 export default {
-  components: { GraphScore },
+  components: { Trombinoscope, SocialNetworks, GraphScore},
   props: {
     components: { type: Array, required: true, default: () => [] },
   },

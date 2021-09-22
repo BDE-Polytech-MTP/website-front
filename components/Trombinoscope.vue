@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <article class="section is-medium">
+    <article class="section is-medium trombi">
       <h1 v-if="title" class="title is-1 has-text-centered mb-6">
         {{ title }}
       </h1>
@@ -16,6 +16,7 @@
             :picture="member.picture"
             :poste="member.poste"
             :url="member.url"
+            :description="member.description"
           />
         </div>
       </div>
@@ -33,5 +34,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+.trombi {
+  margin-top: 0px;
+  padding: 0px;
+}
 </style>
+

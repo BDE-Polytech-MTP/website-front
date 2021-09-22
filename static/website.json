@@ -17,7 +17,10 @@
         "id": "firstID",
         "title": "Polytech Montpellier",
         "subtitle": "Associations d'élèves",
-        "contents": ["Some content here", "Some other content here"],
+        "contents": [
+          "Some content here",
+          "Some other content here"
+        ],
         "picture": "mock.jpg",
         "pictureFirst": true
       }
@@ -121,92 +124,6 @@
       }
     }
   ],
-  "bureaux": [
-    {
-      "id": "bde",
-      "nom": "Bureau des étudiants",
-      "header": "Toujours prêt à t'accompagner",
-      "emoji": "🎒",
-      "president": "Joe Biden",
-      "body": [
-        {
-          "article": {
-            "id": "bdeArticle",
-            "title": "Bureau des étudiants",
-            "subtitle": "Bureaux",
-            "contents": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum.",
-              "Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique."
-            ],
-            "picture": "organigram.jpg",
-            "pictureFirst": true
-          }
-        },
-        {
-          "picture": {
-            "id": "bde-organigram",
-            "picture": "organigram.jpg"
-          }
-        }
-      ]
-    },
-    {
-      "id": "bds",
-      "nom": "Bureau des sports",
-      "header": "petit description",
-      "emoji": "🏐",
-      "president": "Donald Trump",
-      "body": [
-        {
-          "article": {
-            "id": "bdsArticle",
-            "title": "Bureau des sports",
-            "subtitle": "Bureaux",
-            "contents": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum.",
-              "Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique."
-            ],
-            "picture": "organigram.jpg",
-            "pictureFirst": true
-          }
-        },
-        {
-          "picture": {
-            "id": "bde-organigram",
-            "picture": "organigram.jpg"
-          }
-        }
-      ]
-    },
-    {
-      "id": "bda",
-      "nom": "Bureau des arts",
-      "header": "petit description",
-      "emoji": "🎨",
-      "president": "Julien Lepers",
-      "body": [
-        {
-          "article": {
-            "id": "bdaArticle",
-            "title": "Bureau des arts",
-            "subtitle": "Bureaux",
-            "contents": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed orci non erat sagittis vehicula. Nullam venenatis ornare arcu, at dignissim lectus mollis et. Sed in venenatis eros, sed tincidunt purus. Curabitur at ex quis turpis consequat rutrum.",
-              "Duis at risus eu sapien tincidunt dignissim. Curabitur nec venenatis libero. Sed vulputate augue vel orci luctus aliquet. Aliquam nec volutpat leo, ac dapibus neque. Donec magna augue, accumsan in egestas ullamcorper, placerat ut arcu. Sed sollicitudin scelerisque tristique."
-            ],
-            "picture": "organigram.jpg",
-            "pictureFirst": true
-          }
-        },
-        {
-          "picture": {
-            "id": "bde-organigram",
-            "picture": "organigram.jpg"
-          }
-        }
-      ]
-    }
-  ],
   "associations": [
     {
       "type": "Sportives",
@@ -242,7 +159,11 @@
                 "id": "badmintonMembers",
                 "title": "La fine équipe",
                 "subtitle": "Membres",
-                "members": ["John Doe", "Alice Evergreen", "Paul Mylo"],
+                "members": [
+                  "John Doe",
+                  "Alice Evergreen",
+                  "Paul Mylo"
+                ],
                 "gmap": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d360.9634225216508!2d3.8437114840086686!3d43.63344900493854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1612545523839!5m2!1sfr!2sfr"
               }
             }
@@ -258,7 +179,11 @@
                 "id": "someID",
                 "title": "La fine équipe",
                 "subtitle": "Membres",
-                "members": ["John Doe", "Alice Evergreen", "Paul Mylo"],
+                "members": [
+                  "John Doe",
+                  "Alice Evergreen",
+                  "Paul Mylo"
+                ],
                 "gmap": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d360.9634225216508!2d3.8437114840086686!3d43.63344900493854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1612545523839!5m2!1sfr!2sfr"
               }
             }
@@ -274,7 +199,11 @@
                 "id": "someID",
                 "title": "La fine équipe",
                 "subtitle": "Membres",
-                "members": ["John Doe", "Alice Evergreen", "Paul Mylo"],
+                "members": [
+                  "John Doe",
+                  "Alice Evergreen",
+                  "Paul Mylo"
+                ],
                 "gmap": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d360.9634225216508!2d3.8437114840086686!3d43.63344900493854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1612545523839!5m2!1sfr!2sfr"
               }
             }
@@ -296,7 +225,11 @@
                 "id": "someID",
                 "title": "La fine équipe",
                 "subtitle": "Membres",
-                "members": ["John Doe", "Alice Evergreen", "Paul Mylo"],
+                "members": [
+                  "John Doe",
+                  "Alice Evergreen",
+                  "Paul Mylo"
+                ],
                 "gmap": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d360.9634225216508!2d3.8437114840086686!3d43.63344900493854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1612545523839!5m2!1sfr!2sfr"
               }
             }
@@ -318,7 +251,11 @@
                 "id": "someID",
                 "title": "La fine équipe",
                 "subtitle": "Membres",
-                "members": ["John Doe", "Alice Evergreen", "Paul Mylo"],
+                "members": [
+                  "John Doe",
+                  "Alice Evergreen",
+                  "Paul Mylo"
+                ],
                 "gmap": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d360.9634225216508!2d3.8437114840086686!3d43.63344900493854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1612545523839!5m2!1sfr!2sfr"
               }
             }
@@ -402,98 +339,6 @@
           "nom": "Les tigresses",
           "emoji": "🐯",
           "lieu": "Clermont-Ferrand"
-        }
-      ]
-    }
-  ],
-  "equipe" : [
-    {
-      "title": "Team Web",
-      "description": "Ceci est une courte description pas obligatoire",
-      "members": [
-        {
-          "picture": "member",
-          "firstName": "Julien",
-          "lastName": "Vendran",
-          "mail": "julien@yopmail.com",
-          "place": "Respo",
-          "education": "IG"
-        },
-        {
-          "lastName": "Desbrousse",
-          "firstName": "Quentin",
-          "mail": "quentin@yopmail.com",
-          "place": "Respo",
-          "education": "IG"
-        },
-        {
-          "lastName": "Vendran",
-          "firstName": "Julien",
-          "mail": "julien@yopmail.com",
-          "place": "Respo",
-          "education":  "IG"
-        },
-        {
-          "lastName": "Vendran",
-          "firstName": "Julien",
-          "mail": "julien@yopmail.com",
-          "place": "Respo",
-          "education":  "IG"
-        },
-        {
-          "lastName": "Vendran",
-          "firstName": "Julien",
-          "mail": "julien@yopmail.com",
-          "place": "Respo",
-          "education":  "IG"
-        },
-        {
-          "lastName": "Vendran",
-          "firstName": "Julien",
-          "mail": "julien@yopmail.com",
-          "place": "Respo",
-          "education":  "IG"
-        },
-        {
-          "lastName": "Vendran",
-          "firstName": "Julien",
-          "mail": "julien@yopmail.com",
-          "place": "Respo",
-          "education":  "IG"
-        },
-        {
-          "lastName": "Vendran",
-          "firstName": "Julien",
-          "mail": "julien@yopmail.com",
-          "place": "Respo",
-          "education":  "IG"
-        }
-      ]
-    },
-    {
-      "title": "BR",
-      "description": "Ceci est une courte description pas obligatoire",
-      "members": [
-        {
-          "lastName": "Sylm",
-          "firstName": "Joya",
-          "mail": "Joya@yopmail.com",
-          "place": "Présidente",
-          "education":  "IG"
-        },
-        {
-          "lastName": "Feuille",
-          "firstName": "Mini",
-          "mail": "Mini@yopmail.com",
-          "place": "Vice-président",
-          "education": "IG"
-        },
-        {
-          "lastName": "Feuille",
-          "firstName": "Mini",
-          "mail": "Mini@yopmail.com",
-          "place": "Vice-président",
-          "education": "IG"
         }
       ]
     }

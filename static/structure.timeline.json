@@ -20,6 +20,7 @@
                 "title": "2018",
                 "date": "2018-10-05T13:48:00.000Z",
                 "dateFormat": {"year": "numeric", "month": "numeric", "day": "numeric", "hour": "numeric","minute": "numeric","second": "numeric"},
+
                 "type": "info"
                 }
             },

@@ -1,0 +1,1039 @@
+{
+  "bureaux": [
+    {
+      "id": "bde",
+      "nom": "Bureau des étudiants",
+      "header": "Toujours prêt à t'accompagner",
+      "emoji": "🎒",
+      "president": "Joya Sayess",
+      "body": [
+        {
+          "article": {
+            "id": "bdeArticle",
+            "title": "Bienvenue au BDE",
+            "subtitle": "Bureaux des étudiant",
+            "contents": [
+              "Vous êtes sur la page de votre BDE 2021-2022.",
+              "Ici vous retrouverez toutes les infos dont vous aurez besoin pour mieux nous connaitre et participer à nos évènements !"
+            ],
+            "picture": "bde/team-bde.JPG",
+            "pictureFirst": true
+          }
+        },
+        {
+          "carousel": {
+            "carousels": [
+              {
+                "title": "Ouverture du site",
+                "content": [
+                  "Vous l'attendiez tous, le voilà !"
+                ],
+                "picture": ""
+              },
+              {
+                "title": "Campo Ingé 2021",
+                "content": [
+                  "Le thème de cette année est : les dieux grecs",
+                  "La tradition est de venir tous déguisés entre filières et en fonction des dieux que nous vous avons associés ⚡️",
+                  "Si tu comptes dormir pendant ce week-end de folie il faudra que tu ramènes ta tente et ton duvet ⛺",
+                  "Prix : 85€ adhérent",
+                  " 95€ non adhérent",
+                  "ATTENTION : Test antigénique ou PCR négatif de moins de 72h obligatoire même si vous avez le pass sanitaire",
+                  "A partir de mercredi il faudra nous apporter à la terrasse de Polytech les documents suivants :",
+                  " - Chèque de caution de 100€ à l'ordre du BDE",
+                  " - Nous faire part d’allergies / intolérance / régime particulier"
+                ],
+                "picture": "/_nuxt/assets/img/bde/campo2021.jpg"
+              }
+            ]
+          }
+        },
+        {
+          "description": {
+            "quotes": [
+              "Si vous continuez vous verrez toute notre équipe plus bas !"
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Bureau Restreint",
+            "members": [
+              {
+                "name": "Joya Sayess",
+                "poste": "Présidente",
+                "picture": "bde/br/prez-joya.JPG"
+              },
+              {
+                "name": "Jodie Cottave",
+                "poste": "Vice-Présidente",
+                "picture": "bde/br/vice-prez-jodie.JPG"
+              },
+              {
+                "name": "Alex Benbouazza",
+                "poste": "Vice-Président",
+                "picture": "bde/br/vice-prez-alex.JPG"
+              },
+              {
+                "name": "Lilian Breuzin",
+                "poste": "Trésorier",
+                "picture": "bde/br/trez-lilian.JPG"
+              },
+              {
+                "name": "Rémi Gabillard",
+                "poste": "Vice-Trésorier",
+                "picture": "bde/br/vice-trez-remi.JPG"
+              },
+              {
+                "name": "Julie Gaxieu",
+                "poste": "Trésorier",
+                "picture": "bde/br/secretaire-julie.JPG"
+              },
+              {
+                "name": "Lucie Vignon",
+                "poste": "Respo Com",
+                "picture": "bde/com/respo-com-lucie.JPG"
+              },
+              {
+                "name": "Mathias Flagey",
+                "poste": "Respo Réseau"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team Activités",
+            "members": [
+              {
+                "name": "Lucie Marques",
+                "poste": "Respo",
+                "picture": "bde/acti/respo-acti-lucie.JPG"
+              },
+              {
+                "name": "Julien Freychet",
+                "poste": "Membre",
+                "picture": "bde/ddrs/respo-ddrs-julien.JPG"
+              },
+              {
+                "name": "Ruben Nakache",
+                "poste": "Membre",
+                "picture": "bde/promo/respo-gba-ruben.JPG"
+              },
+              {
+                "name": "Timothé Delaby",
+                "poste": "Membre",
+                "picture": "bde/inte/respo-inte-timothe.JPG"
+              },
+              {
+                "name": "Claire Lescure",
+                "poste": "Membre",
+                "picture": "bde/gala/team-gala-claire.JPG"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team Beach",
+            "members": [
+              {
+                "name": "Adhémar Perrier",
+                "poste": "Respo",
+                "picture": "bde/promo/respo-mat-adhemar.JPG"
+              },
+              {
+                "name": "Quentin Balbuena",
+                "poste": "Membre"
+              },
+              {
+                "name": "Fabien Lacaze",
+                "poste": "Membre",
+                "picture": "bde/part/team-part-fabien.JPG"
+              },
+              {
+                "name": "Mazen Debs",
+                "poste": "Membre",
+                "picture": "bde/desinte/team-desinte-mazen.JPG"
+              },
+              {
+                "name": "Benoît Vincent",
+                "poste": "Membre",
+                "picture": "bde/desinte/team-desinte-benoit.JPG"
+              },
+              {
+                "name": "Thibaut Buffière",
+                "poste": "Membre",
+                "picture": "bde/beach/team-beach-thibault.JPG"
+              },
+              {
+                "name": "Marie-Céline Olieslagers",
+                "poste": "Membre",
+                "picture": "bde/ddrs/team-ddrs-mc.JPG"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team Blue",
+            "members": [
+              {
+                "name": "Thomas Gerier",
+                "poste": "Respo",
+                "picture": "bde/blue/respo-blue-thomas.JPG"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team Campo",
+            "members": [
+              {
+                "name": "Lorris Pollet-Villard",
+                "poste": "Respo",
+                "picture": "bde/campo/respo-campo-lorris.JPG"
+              },
+              {
+                "name": "Clara Ambatlle",
+                "poste": "Membre",
+                "picture": "bde/desinte/team-desinte-clara.JPG"
+              },
+              {
+                "name": "Tina Garcia",
+                "poste": "Membre"
+              },
+              {
+                "name": "Quentin Balbuena",
+                "poste": "Membre"
+              },
+              {
+                "name": "Orianne Reboud",
+                "poste": "Membre",
+                "picture": "bde/promo/respo-ste-orianne.JPG"
+              },
+              {
+                "name": "Titouan Merland",
+                "poste": "Membre",
+                "picture": "bde/inte/team-inte-titouan.JPG"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team Communication",
+            "members": [
+              {
+                "name": "Lucie Vignon",
+                "poste": "Respo",
+                "picture": "bde/com/respo-com-lucie.JPG"
+              },
+              {
+                "name": "Mélanie Maréchal",
+                "poste": "Membre",
+                "picture": "bde/com/team-com-melanie.JPG"
+              },
+              {
+                "name": "Liam Massengo",
+                "poste": "Membre",
+                "picture": "bde/desinte/respo-desinte-liam.JPG"
+              },
+              {
+                "name": "Maël Nadeau",
+                "poste": "Membre",
+                "picture": "bde/ski/respo-ski-mael.JPG"
+              },
+              {
+                "name": "Lorris Pollet-Villard",
+                "poste": "Membre",
+                "picture": "bde/campo/respo-campo-lorris.JPG"
+              },
+              {
+                "name": "Jade Gallot",
+                "poste": "Membre",
+                "picture": "bde/gala/respo-gala-jade.JPG"
+              },
+              {
+                "name": "Marine Cantaloube",
+                "poste": "Membre",
+                "picture": "bde/com/team-com-marine.JPG"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team Développement Durable et Responsabilité Sociétale (DDRS)",
+            "members": [
+              {
+                "name": "Anna Lemoine",
+                "poste": "Respo",
+                "picture": "bde/ddrs/respo-ddrs-anna.JPG"
+              },
+              {
+                "name": "Julien Freychet",
+                "poste": "Respo",
+                "picture": "bde/ddrs/respo-ddrs-julien.JPG"
+              },
+              {
+                "name": "Marie-Céline Olieslagers",
+                "poste": "Membre",
+                "picture": "bde/ddrs/team-ddrs-mc.JPG"
+              },
+              {
+                "name": "Tifaine Delteil",
+                "poste": "Membre",
+                "picture": "bde/promo/respo-mea-tifaine.JPG"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team Désintégration",
+            "members": [
+              {
+                "name": "Liam Massengo",
+                "poste": "Respo",
+                "picture": "bde/desinte/respo-desinte-liam.JPG"
+              },
+              {
+                "name": "Tina Garcia",
+                "poste": "Membre"
+              },
+              {
+                "name": "Pauline Rougé",
+                "poste": "Membre"
+              },
+              {
+                "name": "Benoît Vincent",
+                "poste": "Membre",
+                "picture": "bde/desinte/team-desinte-benoit.JPG"
+              },
+              {
+                "name": "Nicolas Ropiquet",
+                "poste": "Membre",
+                "picture": "bde/ski/team-ski-nicolas.JPG"
+              },
+              {
+                "name": "Clara Ambatlle",
+                "poste": "Membre",
+                "picture": "bde/desinte/team-desinte-clara.JPG"
+              },
+              {
+                "name": "Mazen Debs",
+                "poste": "Membre",
+                "picture": "bde/desinte/team-desinte-mazen.JPG"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team Erasmus",
+            "members": [
+              {
+                "name": "Victor Rios",
+                "poste": "Respo"
+              },
+              {
+                "name": "Angela Zerbib",
+                "poste": "Membre",
+                "picture": "bde/promo/respo-ig-angela.jpg"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team Gala",
+            "members": [
+              {
+                "name": "Jade Gallot",
+                "poste": "Respo",
+                "picture": "bde/gala/respo-gala-jade.JPG"
+              },
+              {
+                "name": "Julia Bras Martin",
+                "poste": "Membre",
+                "picture": "bde/gala/team-gala-julia.JPG"
+              },
+              {
+                "name": "Claire Lescure",
+                "poste": "Membre",
+                "picture": "bde/gala/team-gala-claire.JPG"
+              },
+              {
+                "name": "Charlotte Mathieu",
+                "poste": "Membre",
+                "picture": "bde/gala/team-gala-charlotte.JPG"
+              },
+              {
+                "name": "Lucie Marques",
+                "poste": "Membre",
+                "picture": "bde/acti/respo-acti-lucie.JPG"
+              },
+              {
+                "name": "Fanny Oddon",
+                "poste": "Membre"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team Goodies",
+            "members": [
+              {
+                "name": "Fabio Lointier",
+                "poste": "Respo",
+                "picture": "bde/goodies/respo-goodies-fabio.JPG"
+              },
+              {
+                "name": "Adhémar Perrier",
+                "poste": "Respo",
+                "picture": "bde/promo/respo-mat-adhemar.JPG"
+              },
+              {
+                "name": "Marie Moreau",
+                "poste": "Membre",
+                "picture": "bde/ski/team-ski-marie.JPG"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team Intégration",
+            "members": [
+              {
+                "name": "Timothé Delaby",
+                "poste": "Respo",
+                "picture": "bde/inte/respo-inte-timothe.JPG"
+              },
+              {
+                "name": "Mélanie Maréchal",
+                "poste": "Membre",
+                "picture": "bde/com/team-com-melanie.JPG"
+              },
+              {
+                "name": "Manon Benavente",
+                "poste": "Membre"
+              },
+              {
+                "name": "Titouan Merland",
+                "poste": "Membre",
+                "picture": "bde/inte/team-inte-titouan.JPG"
+              },
+              {
+                "name": "Pauline Rougé",
+                "poste": "Membre"
+              },
+              {
+                "name": "Louise Quiniou",
+                "poste": "Membre",
+                "picture": "bde/inte/team-inte-louise.JPG"
+              },
+              {
+                "name": "Romeo Leone",
+                "poste": "Membre",
+                "picture": "bde/inte/team-inte-romeo.JPG"
+              },
+              {
+                "name": "Andy Roux",
+                "poste": "Membre"
+              },
+              {
+                "name": "Fanny Oddon",
+                "poste": "Membre"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team K-fet",
+            "members": [
+              {
+                "name": "Clément Texier",
+                "poste": "Respo",
+                "picture": "bde/kfet/respo-kfet-clement.JPG"
+              },
+              {
+                "name": "Fabio Lointier",
+                "poste": "Membre",
+                "picture": "bde/goodies/respo-goodies-fabio.JPG"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team Partenariat",
+            "members": [
+              {
+                "name": "Rémi Doumap",
+                "poste": "Respo",
+                "picture": "bde/part/respo-part-remi.JPG"
+              },
+              {
+                "name": "Julien Freychet",
+                "poste": "Membre",
+                "picture": "bde/ddrs/respo-ddrs-julien.JPG"
+              },
+              {
+                "name": "Fabien Lacaze",
+                "poste": "Membre",
+                "picture": "bde/part/team-part-fabien.JPG"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team Peip",
+            "members": [
+              {
+                "name": "Lou Vivenot",
+                "poste": "Respo",
+                "picture": "bde/peip/respo-peip-lou.JPG"
+              },
+              {
+                "name": "Romane Gouzy",
+                "poste": "Respo",
+                "picture": "bde/peip/respo-peip-romane.JPG"
+              },
+              {
+                "name": "Lucie Laboisseret",
+                "poste": "Membre",
+                "picture": "bde/peip/team-peip-lucie.JPG"
+              },
+              {
+                "name": "Mailys Riou",
+                "poste": "Membre",
+                "picture": "bde/peip/team-peip-mailys.JPG"
+              },
+              {
+                "name": "Marie Gaxieu",
+                "poste": "Membre",
+                "picture": "bde/peip/team-peip-marie.JPG"
+              },
+              {
+                "name": "Quentin Budillon",
+                "poste": "Membre",
+                "picture": "bde/tutorat/respo-tutorat-quentin.JPG"
+              },
+              {
+                "name": "Mohatea Laughlin",
+                "poste": "Membre",
+                "picture": "bde/peip/team-peip-moheatea.JPG"
+              },
+              {
+                "name": "Mattéo Bourgeois",
+                "poste": "Membre",
+                "picture": "bde/peip/team-peip-matteo.JPG"
+              },
+              {
+                "name": "Silvan Fitsh",
+                "poste": "Membre",
+                "picture": "bde/peip/team-peip-silvan.JPG"
+              },
+              {
+                "name": "Cora Paroncini",
+                "poste": "Membre"
+              },
+              {
+                "name": "Manon Benavente",
+                "poste": "Soutien"
+              },
+              {
+                "name": "Andy Roux",
+                "poste": "Soutien"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team Prévention",
+            "members": [
+              {
+                "name": "Maelenn Martenot",
+                "poste": "Respo"
+              },
+              {
+                "name": "Vincent Barras",
+                "poste": "Respo",
+                "picture": "bde/prev/respo-prev-vincent.JPG"
+              },
+              {
+                "name": "Mathilde Rollet",
+                "poste": "Membre",
+                "picture": "bde/prev/team-prev-mathilde.JPG"
+              },
+              {
+                "name": "Maëlys Bouchaibi",
+                "poste": "Membre",
+                "picture": "bde/promo/respo-mi-maelys.JPG"
+              },
+              {
+                "name": "Charlotte Mathieu",
+                "poste": "Membre",
+                "picture": "bde/gala/team-gala-charlotte.JPG"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team Remise Des Diplômes (RDD)",
+            "members": [
+              {
+                "name": "Guillaume Glais",
+                "poste": "Respo",
+                "picture": "bde/rdd/respo-rdd-guillaume.JPG"
+              },
+              {
+                "name": "Mathilde Rollet",
+                "poste": "Membre",
+                "picture": "bde/prev/team-prev-mathilde.JPG"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team Réseau Montpellier",
+            "members": [
+              {
+                "name": "Thomas Gerier",
+                "poste": "Respo",
+                "picture": "bde/blue/respo-blue-thomas.JPG"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team Ski",
+            "members": [
+              {
+                "name": "Juliette Bretaud",
+                "poste": "Respo",
+                "picture": "bde/ski/respo-ski-juliette.JPG"
+              },
+              {
+                "name": "Maël Nadeau",
+                "poste": "Respo",
+                "picture": "bde/ski/respo-ski-mael.JPG"
+              },
+              {
+                "name": "Pierre Ortholand",
+                "poste": "Membre",
+                "picture": "bde/ski/team-ski-pierre.JPG"
+              },
+              {
+                "name": "Nicolas Ropiquet",
+                "poste": "Membre",
+                "picture": "bde/ski/team-ski-nicolas.JPG"
+              },
+              {
+                "name": "Marie Moreau",
+                "poste": "Membre",
+                "picture": "bde/ski/team-ski-marie.JPG"
+              },
+              {
+                "name": "Louise Quiniou",
+                "poste": "Membre",
+                "picture": "bde/inte/team-inte-louise.JPG"
+              },
+              {
+                "name": "Romeo Leone",
+                "poste": "Membre",
+                "picture": "bde/inte/team-inte-romeo.JPG"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team Soirée",
+            "members": [
+              {
+                "name": "Dorian Chatellier",
+                "poste": "Respo",
+                "picture": "bde/soiree/respo-soiree-dorian.JPG"
+              },
+              {
+                "name": "Silas Huguenin",
+                "poste": "Respo",
+                "picture": "bde/soiree/respo-soiree-silas.JPG"
+              },
+              {
+                "name": "Robin Brossard",
+                "poste": "Membre",
+                "picture": "bde/soiree/team-soiree-robin.JPG"
+              },
+              {
+                "name": "Louis Jallier",
+                "poste": "Membre",
+                "picture": "bde/soiree/team-soiree-louis.JPG"
+              },
+              {
+                "name": "Julia Bras Martin",
+                "poste": "Membre",
+                "picture": "bde/gala/team-gala-julia.JPG"
+              },
+              {
+                "name": "Djaber Gadi",
+                "poste": "Membre",
+                "picture": "bda/team/respo-bda-djaber.JPG"
+              },
+              {
+                "name": "Pierre Ortholand",
+                "poste": "Membre",
+                "picture": "bde/ski/team-ski-pierre.JPG"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team Spécialités",
+            "members": [
+              {
+                "name": "Angela Zerbib",
+                "poste": "Respo IG",
+                "picture": "bde/promo/respo-ig-angela.jpg"
+              },
+              {
+                "name": "Mathias Flagey",
+                "poste": "Respo DO"
+              },
+              {
+                "name": "Tifaine Delteil",
+                "poste": "Respo MEA",
+                "picture": "bde/promo/respo-mea-tifaine.JPG"
+              },
+              {
+                "name": "Lucas Villa",
+                "poste": "Respo SE",
+                "picture": "bde/promo/respo-app-lucas.JPG"
+              },
+              {
+                "name": "Orianne Reboud",
+                "poste": "Respo STE",
+                "picture": "bde/promo/respo-ste-orianne.JPG"
+              },
+              {
+                "name": "Tina Garcia",
+                "poste": "Respo EGC"
+              },
+              {
+                "name": "Maëlys Boucaibi",
+                "poste": "Respo MI",
+                "picture": "bde/promo/respo-mi-maelys.JPG"
+              },
+              {
+                "name": "Edgar Menzildjian",
+                "poste": "Respo MSI"
+              },
+              {
+                "name": "Ruben Nakache",
+                "poste": "Respo GBA",
+                "picture": "bde/promo/respo-gba-ruben.JPG"
+              },
+              {
+                "name": "Adhémar Perrier",
+                "poste": "Respo MAT",
+                "picture": "bde/promo/respo-mat-adhemar.JPG"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Team Web",
+            "members": [
+              {
+                "name": "Julien Vendran",
+                "poste": "Respo",
+                "picture": "bde/web/respo-web-julien.JPG"
+              },
+              {
+                "name": "Quentin Desbrousses",
+                "poste": "Respo",
+                "picture": "bde/web/respo-web-quentin.JPG"
+              },
+              {
+                "name": "Florent Hugouvieux",
+                "poste": "Soutien"
+              },
+              {
+                "name": "Alexandre Fernique",
+                "poste": "Soutien"
+              },
+              {
+                "name": "Joan Teriihoania",
+                "poste": "Soutien"
+              },
+              {
+                "name": "Axel Laget",
+                "poste": "Soutien"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bds",
+      "nom": "Bureau des sports",
+      "header": "Le sport c'est le S",
+      "emoji": "🏐",
+      "president": "Donald Trump",
+      "body": [
+        {
+          "article": {
+            "title": "Bienvenue au BDS",
+            "subtitle": "Bureau Des Sports",
+            "picture": "bds/sports.jpg",
+            "startWithImage": false,
+            "contents": [
+              "Cette page vous permettra de suivre nos actualités ainsi que les différents clubs et évènements que nous proposerons !"
+            ]
+          }
+        },
+        {
+          "carousel": {
+            "carousels": [
+              {
+                "title": "Nouvelle page",
+                "content": [
+                  "La page du BDS est à présent disponible !!"
+                ],
+                "picture": "/_nuxt/assets/img/bds/logo.PNG"
+              }
+            ]
+          }
+        },
+        {
+          "trombinoscope": {
+            "title": "Voici notre bureau !",
+            "members": [
+              {
+                "name": "Vincent BARRAS (MI)",
+                "poste": "PRESIDENT"
+              },
+              {
+                "name": "Maelenn MARTENOT (EGC)",
+                "poste": "VICE-PRESIDENTE"
+              },
+              {
+                "name": "Valentin GUILLAUME (MI)",
+                "poste": "TRESORIER"
+              },
+              {
+                "name": "Thibault BUFFIERE (STE)",
+                "poste": "VICE-TRESORIER"
+              },
+              {
+                "name": "Louise MONMUSSON (GBA)",
+                "poste": "SECRETAIRE"
+              },
+              {
+                "name": "Doriane N'GUESSAN (GBA)",
+                "poste": "PARTENARIATS / GOODIES"
+              },
+              {
+                "name": "Rémi BARONE (EGC)",
+                "poste": "PARTENARIATS / GOODIES"
+              },
+              {
+                "name": "Malo ENEL (MI)",
+                "poste": "COMMUNICATION"
+              }
+            ]
+          }
+        },
+        {
+          "description": {
+            "quotes": [
+              "Une période d’essai gratuite est mise en place en début d’année pour une durée d’un mois (dates communiquées ultérieurement).",
+              "Ensuite pour accéder aux activitées du BDS, l’adhésion est nécessaire (….$). Cette adhésion permet aussi l’accès à des tarifs préférentiels pour les goodies du BDS (et évènements éventuels), à tous les partenariats proposés par le BDS …"
+            ]
+          }
+        },
+        {
+          "clubs": {
+            "color": "rgb(124,86,199)",
+            "clubs": [
+              {
+                "id": "club1",
+                "image": "/_nuxt/assets/img/bds/athletisme.jpg",
+                "title": "Athlétisme",
+                "directedBy": "Pierre VERMUSE (MI)",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club2",
+                "image": "/_nuxt/assets/img//bds/badminton.jpg",
+                "title": "Badminton",
+                "directedBy": "Jodie COTTAVE (IG) et Lou VIVENOT",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club3",
+                "image": "/_nuxt/assets/img/bds/basket.jpg",
+                "title": "Basket",
+                "directedBy": "Hugo Ménart (MI) et Anthony ROYON (MAT)",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club4",
+                "image": "/_nuxt/assets/img/bds/boxe.jpg",
+                "title": "Boxe",
+                "directedBy": "Théo BOISSERIE (MI)",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club5",
+                "image": "/_nuxt/assets/img/bds/running.jpg",
+                "title": "Course à pied",
+                "directedBy": "Louise MONMUSSON (GBA) et Manon LASSUS (GBA)",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club6",
+                "image": "/_nuxt/assets/img/bds/escalade.jpg",
+                "title": "Escalade",
+                "directedBy": "Antton ETCHEVERRIA et Juliette BRETAUD (STE)",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club7",
+                "image": "/_nuxt/assets/img/bds/foot.jpg",
+                "title": "Foot",
+                "directedBy": "Louis JALLIER (MI) et Mazen DEBS (MAT)",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club8",
+                "image": "/_nuxt/assets/img/bds/hand.jpg",
+                "title": "Hand",
+                "directedBy": "Timothé DELABY (GBA), Anna LEMOINE (GBA) et Thomas LENFAN (MAT)",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club9",
+                "image": "/_nuxt/assets/img/bds/pompom.jpg",
+                "title": "Pompom",
+                "directedBy": "Jodie COTTAVE (IG) et Elisa VALDERRAMA",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club10",
+                "image": "/_nuxt/assets/img/bds/rugby.jpg",
+                "title": "Rugby",
+                "directedBy": "Léo FLAQUET (MI) et Célia DULERME (GBA)",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club11",
+                "image": "/_nuxt/assets/img/bds/tennis.jpg",
+                "title": "Tennis",
+                "directedBy": "Lucie MARQUES (GBA) et Titouan (GBA)",
+                "hour": "-",
+                "location": "-"
+              },
+              {
+                "id": "club12",
+                "image": "/_nuxt/assets/img/bds/volley.jpg",
+                "title": "Volley",
+                "directedBy": "Fabien LACAZE (STE) et Pierre ORTHOLAND (MAT)",
+                "hour": "-",
+                "location": "-"
+              }
+            ]
+          }
+        },
+        {
+          "description": {
+            "quotes": [
+              "Pour plus d'informations contactez-nous sur les réseaux !",
+              "Facebook: @BDS.Polytech.Montpellier",
+              "Instagram: @bds_polytech_montpellier)"
+            ]
+          }
+        },
+        {
+          "social": {
+            "facebook": "https://www.facebook.com/BDS.Polytech.Montpellier/",
+            "instagram": "https://www.instagram.com/bds_polytech_montpellier/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bda",
+      "nom": "Bureau des arts",
+      "header": "Faites place aux artistes",
+      "emoji": "🎨",
+      "president": "Julien Lepers",
+      "body": [
+        {
+          "article": {
+            "id": "bdaArticle",
+            "title": "Bienvenue au BDA",
+            "subtitle": "Bureau Des Arts",
+            "contents": [
+              "Voici la branche artistique du bureau des étudiants. Nous nous occupons d'organiser plusieurs évènements culturels tout au long de l'année.",
+              "Le BDA c'est aussi de nombreux clubs dans lesquels tu pourras découvrir de nouvelles personnes et de nouvelles activités."
+            ],
+            "picture": "bda/logo-bda.png",
+            "pictureFirst": true
+          }
+        },
+        {
+          "carousel": {
+            "carousels": [
+              {
+                "title": "Nouvelle page",
+                "content": [
+                  "La page du BDA est à présent disponible !!"
+                ],
+                "picture": "/_nuxt/assets/img/bda/logo-bda.png"
+              }
+            ]
+          }
+        },
+        {
+          "description": {
+            "quotes": [
+              "Le BDA, c'est qui?",
+              "C'est un groupe de 12 personnes très motivées venant de plein de filières différentes qui vont tout donner pour vous faire vivre votre meilleure année à Polytech ! Si vous voulez plus d'informations sur les évènements, le BDA ou les clubs, envoyez un message à l'un d'entre nous ou sur les réseaux du BDA"
+            ]
+          }
+        },
+        {
+          "social": {
+            "facebook": "https://www.facebook.com/PolytechMontpellierBDA/",
+            "instagram": "https://www.instagram.com/bda_polytech_montpellier/"
+          }
+        }
+      ]
+    }
+  ]
+}

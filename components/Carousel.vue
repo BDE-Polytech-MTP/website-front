@@ -1,31 +1,58 @@
 <template>
-    <b-carousel
+  <section class="mt-2">
+    <p
+      class="
+        py-6
+        is-size-1
+        has-text-weight-bold
+        is-family-monospace
+        has-text-centered
+      "
+    >
+      Actualités
+    </p>
+    <div class="px-6">
+      <b-carousel
         pause-text="Défilement automatique en pause"
         pause-info-type="is-info"
-        >
+      >
         <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
-            <section class="hero is-large bg-img" v-bind:style="{'background-image': `url('${carousel.picture}')`}">
-                <div class="hero-body has-text-centered" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) )">
-                    <h1 class="title has-text-white">{{carousel.title}}</h1>
-                    <p class="has-text-white">{{ carousel.content }}</p>
-                </div>
-            </section>
+          <b-image
+            class="image is-5by3"
+            :src="
+              carousel.picture ? carousel.picture : 'https://picsum.photos/1000'
+            "
+          />
+          <div class="has-text-centered carousel-item-desc py-6">
+            <h1 class="title has-text-white">{{ carousel.title }}</h1>
+            <p
+              class="has-text-white"
+              v-for="(line, j) in carousel.content"
+              :key="j"
+            >
+              {{ line }}
+            </p>
+          </div>
         </b-carousel-item>
-    </b-carousel>
+      </b-carousel>
+    </div>
+  </section>
 </template>
-
-<style scoped>
-    .bg-img {
-        background-position: center center;
-        background-repeat:  no-repeat;
-        background-size:  cover;
-    }
-</style>
 
 <script>
 export default {
-    props: {
-        carousels: { type: Array, required: true }
-    }
-}
+  props: {
+    carousels: { type: Array, required: true },
+  },
+};
 </script>
+
+<style scoped>
+.carousel-item-desc {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+</style>
+
