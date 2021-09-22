@@ -19,12 +19,15 @@
             "picture": "bde/team-bde.JPG",
             "pictureFirst": true
           }
-        },{
+        },
+        {
           "carousel": {
             "carousels": [
               {
                 "title": "Ouverture du site",
-                "content": ["Vous l'attendiez tous, le voilà !"],
+                "content": [
+                  "Vous l'attendiez tous, le voilà !"
+                ],
                 "picture": ""
               },
               {
@@ -33,11 +36,13 @@
                   "Le thème de cette année est : les dieux grecs",
                   "La tradition est de venir tous déguisés entre filières et en fonction des dieux que nous vous avons associés ⚡️",
                   "Si tu comptes dormir pendant ce week-end de folie il faudra que tu ramènes ta tente et ton duvet ⛺",
-                  "Prix : 85€ adhérent"," 95€ non adhérent",
+                  "Prix : 85€ adhérent",
+                  " 95€ non adhérent",
                   "ATTENTION : Test antigénique ou PCR négatif de moins de 72h obligatoire même si vous avez le pass sanitaire",
                   "A partir de mercredi il faudra nous apporter à la terrasse de Polytech les documents suivants :",
                   " - Chèque de caution de 100€ à l'ordre du BDE",
-                  " - Nous faire part d’allergies / intolérance / régime particulier"],
+                  " - Nous faire part d’allergies / intolérance / régime particulier"
+                ],
                 "picture": "/_nuxt/assets/img/bde/campo2021.jpg"
               }
             ]
@@ -211,7 +216,7 @@
               {
                 "name": "Titouan Merland",
                 "poste": "Membre",
-                "picture":"bde/inte/team-inte-titouan.JPG"
+                "picture": "bde/inte/team-inte-titouan.JPG"
               }
             ]
           }
@@ -310,7 +315,7 @@
               {
                 "name": "Nicolas Ropiquet",
                 "poste": "Membre",
-                "picture":"bde/ski/team-ski-nicolas.JPG"
+                "picture": "bde/ski/team-ski-nicolas.JPG"
               },
               {
                 "name": "Clara Ambatlle",
@@ -796,15 +801,19 @@
             "subtitle": "Bureau Des Sports",
             "picture": "bds/sports.jpg",
             "startWithImage": false,
-            "contents": ["Cette page vous permettra de suivre nos actualités ainsi que les différents clubs et évènements que nous proposerons !"]
+            "contents": [
+              "Cette page vous permettra de suivre nos actualités ainsi que les différents clubs et évènements que nous proposerons !"
+            ]
           }
         },
         {
           "carousel": {
-            "carousels" : [
+            "carousels": [
               {
                 "title": "Nouvelle page",
-                "content": ["La page du BDS est à présent disponible !!"],
+                "content": [
+                  "La page du BDS est à présent disponible !!"
+                ],
                 "picture": "/_nuxt/assets/img/bds/logo.PNG"
               }
             ]
@@ -821,37 +830,30 @@
               {
                 "name": "Maelenn MARTENOT (EGC)",
                 "poste": "VICE-PRESIDENTE"
-
               },
               {
                 "name": "Valentin GUILLAUME (MI)",
                 "poste": "TRESORIER"
-
               },
               {
                 "name": "Thibault BUFFIERE (STE)",
                 "poste": "VICE-TRESORIER"
-
               },
               {
                 "name": "Louise MONMUSSON (GBA)",
                 "poste": "SECRETAIRE"
-
               },
               {
                 "name": "Doriane N'GUESSAN (GBA)",
                 "poste": "PARTENARIATS / GOODIES"
-
               },
               {
                 "name": "Rémi BARONE (EGC)",
                 "poste": "PARTENARIATS / GOODIES"
-
               },
               {
                 "name": "Malo ENEL (MI)",
                 "poste": "COMMUNICATION"
-
               }
             ]
           }
@@ -1006,10 +1008,12 @@
         },
         {
           "carousel": {
-            "carousels" : [
+            "carousels": [
               {
                 "title": "Nouvelle page",
-                "content": "La page du BDA est à présent disponible !!",
+                "content": [
+                  "La page du BDA est à présent disponible !!"
+                ],
                 "picture": "/_nuxt/assets/img/bda/logo-bda.png"
               }
             ]
@@ -1019,16 +1023,7 @@
           "description": {
             "quotes": [
               "Le BDA, c'est qui?",
-              "C'est un groupe de 12 personnes très motivées venants de plain de filières différentes qui vont tout donner pour vous faire vivre votre meilleure année à Polytech !"
-            ]
-          }
-        },
-        {
-          "description": {
-            "quotes": [
-              "Si vous voulez plus d'informations sur les évènements, le BDA ou les clubs, envoyez un message à l'un d'entre nous ou sur les réseaux du BDA",
-              "Instagram: bda_polytech_montpellier",
-              "Facebook: BDA polytech Montpellier"
+              "C'est un groupe de 12 personnes très motivées venant de plein de filières différentes qui vont tout donner pour vous faire vivre votre meilleure année à Polytech ! Si vous voulez plus d'informations sur les évènements, le BDA ou les clubs, envoyez un message à l'un d'entre nous ou sur les réseaux du BDA"
             ]
           }
         },

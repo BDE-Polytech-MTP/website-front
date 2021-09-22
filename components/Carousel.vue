@@ -1,50 +1,57 @@
 <template>
   <section class="mt-2">
-    <p class="actu has-text-centered">Actualités</p>
-    <b-carousel
-      pause-text="Défilement automatique en pause"
-      pause-info-type="is-info"
+    <p
+      class="
+        py-6
+        is-size-1
+        has-text-weight-bold
+        is-family-monospace
+        has-text-centered
+      "
     >
-      <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
-        <b-image
-          class="image"
-          :src="
-            carousel.picture ? carousel.picture : 'https://picsum.photos/1000'
-          "
-        />
-        <div class="has-text-centered carousel-item-desc py-6">
-          <h1 class="title has-text-white">{{ carousel.title }}</h1>
-          <p
-            class="has-text-white"
-            v-for="(line, j) in carousel.content"
-            :key="j"
-          >
-            {{ line }}
-          </p>
-        </div>
-      </b-carousel-item>
-    </b-carousel>
+      Actualités
+    </p>
+    <div class="px-6">
+      <b-carousel
+        pause-text="Défilement automatique en pause"
+        pause-info-type="is-info"
+      >
+        <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
+          <b-image
+            class="image is-5by3"
+            :src="
+              carousel.picture ? carousel.picture : 'https://picsum.photos/1000'
+            "
+          />
+          <div class="has-text-centered carousel-item-desc py-6">
+            <h1 class="title has-text-white">{{ carousel.title }}</h1>
+            <p
+              class="has-text-white"
+              v-for="(line, j) in carousel.content"
+              :key="j"
+            >
+              {{ line }}
+            </p>
+          </div>
+        </b-carousel-item>
+      </b-carousel>
+    </div>
   </section>
 </template>
 
 <script>
 export default {
   props: {
-    carousels: { type: Array, required: true }
-  }
-}
+    carousels: { type: Array, required: true },
+  },
+};
 </script>
 
 <style scoped>
-.actu {
-  font-size: 60px;
-  font-weight: bold;
-  padding: 20px;
-  font-family: monospace;
-}
 .carousel-item-desc {
-  background-color: rgba(0, 0, 0, 0.4);
-  display: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  width: 100%;
   bottom: 0px;
 }
 </style>
