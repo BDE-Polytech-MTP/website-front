@@ -13,7 +13,7 @@
     "@nuxtjs/auth-next": "^5.0.0-1624817847.21691f1",
     "@nuxtjs/axios": "^5.13.6",
     "bulma-timeline": "^3.0.4",
-    "chart.js": "^2.9.4",
+    "chart.js": "^4.0.1",
     "core-js": "^3.17.3",
     "graphql-tag": "^2.12.5",
     "node-sass": "^5.0.0",
